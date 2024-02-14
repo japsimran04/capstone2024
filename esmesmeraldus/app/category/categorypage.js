@@ -14,8 +14,8 @@ export default function CategoryComponent(props) {
       <ul>
         <li><a href="#">Colombian Coffee</a></li>
         <li><a href="#">Specialty Coffee</a></li>
-        {/* ... (other list items) ... */}
         <li><a href="#">Colouristm</a></li>
+        
       </ul>
     </div>
   );

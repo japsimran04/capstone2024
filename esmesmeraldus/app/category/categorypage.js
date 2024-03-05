@@ -12,9 +12,11 @@ export default function CategoryComponent(props) {
       )}
       <h2>Browse by category</h2>
       <ul>
-        <li><a href="#">Colombian Coffee</a></li>
-        <li><a href="#">Specialty Coffee</a></li>
-        <li><a href="#">Colouristm</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">About </a></li>
+        
         
       </ul>
     </div>

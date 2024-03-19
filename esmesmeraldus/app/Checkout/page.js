@@ -1,4 +1,4 @@
-import Header from "../components/header";
+import Header from "../Cart/header";
 import React from "react";
 
 export default function Page() {

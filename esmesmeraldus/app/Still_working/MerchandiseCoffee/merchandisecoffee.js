@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function HomepageUserOut(){
+export default function MerchandisePageCoffee(){
 
     return(
             <div className="MerchandisePageCoffee" style={{width: 1512, height: 2049, position: 'relative', background: '#E9E5D6'}}>

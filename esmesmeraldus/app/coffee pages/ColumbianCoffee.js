@@ -4,7 +4,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-      <h1>HALDUS ESMER</h1>
+      <h1>Esmeraldus</h1>
       <nav>
         <ul>
           <li><a href="#shop">Shop</a></li>
@@ -53,7 +53,7 @@ const Shop = () => {
 const Home = () => {
   return (
     <div id="home">
-      <h1>Welcome to Haldus Esmer</h1>
+      <h1>Welcome to Esmeraldus</h1>
       <p>Your local coffee roaster and cafe.</p>
     </div>
   );
@@ -76,7 +76,7 @@ const About = () => {
   return (
     <div id="about">
       <h1>About</h1>
-      <p>Haldus Esmer is a small batch coffee roaster and cafe located in Calgary, Canada.</p>
+      <p>Esmeraldus is a small batch coffee roaster and cafe located in Calgary, Canada.</p>
       <p>We are passionate about sourcing and roasting the highest quality coffee beans from around the world.</p>
     </div>
   );

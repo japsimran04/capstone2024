@@ -20,7 +20,7 @@ class MerchandisePage extends React.Component {
   render() {
     return (
       <div>
-        <h1>Cislubion Coffee</h1>
+        <h1>Columbian Coffee</h1>
         <p>Sold out</p>
         <p>Free delivery for purchases of $50 or over! Only in Calgary!</p>
 

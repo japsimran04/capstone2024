@@ -10,7 +10,7 @@
         <div className="Vector" style={{width: 5.06, height: 4.69, left: 27.81, top: 30.49, position: 'absolute', background: '#E9E5D6'}}></div>
         <div className="Vector" style={{width: 36.69, height: 25.80, left: 0, top: 2.34, position: 'absolute', background: '#E9E5D6'}}></div>
         <div className="Vector" style={{width: 40.45, height: 37.52, left: 0, top: 0, position: 'absolute'}}></div>
-        <div className="IconUserAvatarFilledAlt" style={{width: 36.69, height: 37.52, left: 88.49, top: 0, position: 'absolute'}}>
+        <div className="IconUserAvatnb arFilledAlt" style={{width: 36.69, height: 37.52, left: 88.49, top: 0, position: 'absolute'}}>
           <div className="Vector" style={{width: 11.47, height: 11.72, left: 12.61, top: 9.38, position: 'absolute', background: '#E9E5D6'}}></div>
           <div className="Vector" style={{width: 32.10, height: 32.83, left: 2.29, top: 2.35, position: 'absolute', background: '#E9E5D6'}}></div>
           <div className="Vector" style={{width: 36.69, height: 37.52, left: 0, top: 0, position: 'absolute'}}></div>

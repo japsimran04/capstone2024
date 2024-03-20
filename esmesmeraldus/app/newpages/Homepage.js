@@ -54,7 +54,7 @@
       <div className="Shop" style={{width: 83, height: 26.11, left: 173.04, top: 0.89, position: 'absolute', color: '#E9E5D6', fontSize: 28, fontFamily: 'Average', fontWeight: '400', wordWrap: 'break-word'}}>Shop</div>
       <div className="About" style={{width: 178, height: 26.83, left: 508.91, top: 1.90, position: 'absolute', color: '#E9E5D6', fontSize: 28, fontFamily: 'Average', fontWeight: '400', wordWrap: 'break-word'}}>About</div>
       <div className="Learn" style={{width: 154.41, height: 30.46, left: 335.45, top: 0, position: 'absolute', color: '#E9E5D6', fontSize: 28, fontFamily: 'Average', fontWeight: '400', wordWrap: 'break-word'}}>Learn</div>
-      <div className="MaskGroup" style={{width: 57.54, height: 26.11, left: 399.96, top: 7.42, position: 'absolute'}}>
+      <div className="MgiaskGroup" style={{width: 57.54, height: 26.11, left: 399.96, top: 7.42, position: 'absolute'}}>
         <img className="ExpandArrow" style={{width: 57.54, height: 26.11, left: 0, top: 0, position: 'absolute'}} src="https://via.placeholder.com/58x26" />
         <div className="Rectangle58" style={{width: 42.46, height: 40.37, left: 15.73, top: -8.52, position: 'absolute', background: '#E9E5D6'}} />
       </div>

@@ -1,40 +1,40 @@
 import coffeecaturra from "../assets/products/coffeecaturra.png"; 
 import coffeesupremo from "../assets/products/coffeesupremo.png";
-import coffeedarkroast from "../assets/products/coffeeblend.png";
+import coffeeblend from "../assets/products/coffeeblend.png";
 import coffeeclassic from "../assets/products/coffeeclassic.png";
 import coffeelembo from "../assets/products/coffeelembo.png";
 
 export const PRODUCTS = [
     
     {
-        id: 1,
-        name: "Caturra",
+        id: 0,
+        productName: "Caturra",
         price: 18.50,
-        productImage: coffeecaturra
+        productImage: coffeecaturra,
+    },
+    {
+        id: 1,
+        productName: "Supremo",
+        price: 17.50,
+        productImage: coffeesupremo,
     },
     {
         id: 2,
-        name: "Supremo",
-        price: 17.50,
-        productImage: coffeesupremo
-    },
-    {
-        id: 3,
-        name: "Lembo",
+        productName: "Lembo",
         price: 16.50,
-        productImage: coffeelembo
+        productImage: coffeelembo,
     },
     {
         id: 3,
-        name: "Classic",
+        productName: "Classic",
         price: 17.50,
-        productImage: coffeeclassic
+        productImage: coffeeclassic,
     },
     {
-        id: 3,
-        name: "Blend",
+        id: 4,
+        productName: "Blend",
         price: 18.50,
-        productImage: coffeedarkroast
+        productImage: coffeeblend,
     },
 
 ];

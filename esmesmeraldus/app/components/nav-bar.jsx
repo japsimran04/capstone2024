@@ -3,11 +3,10 @@
 import React from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Shop from "../pages/shop";
-//import About from "../pages/about"; 
-//import Learn from "../pages/learn";
+import About from "../pages/about.js"; 
 import Cart from "../pages/cart";
-//import Login from "../pages/login";
-//import Signup from "../pages/signup";
+import Login from "./login";
+import Signup from "./signup";
 import SearchBar from "../components/search-bar";
 import logo from "../assets/images/logo.png";
 
@@ -35,7 +34,6 @@ const NavBar = () => {
                 <button onClick={() => handleNavigation("/")}>Home</button>
                 <button onClick={() => handleNavigation("/shop")}>Shop</button>
                 <button onClick={() => handleNavigation("/about")}>About</button>
-                <button onClick={() => handleNavigation("/learn")}>Learn</button>
                 <button onClick={() => handleNavigation("/cart")}>Cart</button>
                 <button onClick={() => handleNavigation("/login")}>Log In</button>
                 <button onClick={() => handleNavigation("/signup")}>Sign Up</button>
@@ -44,12 +42,10 @@ const NavBar = () => {
             <Routes>
                 <Route path="/"/>
                 <Route path="/shop" element={<Shop />} />
-                {/* <Route path="/about" element={<About />} /> */}
-                {/* <Route path="/learn" element={<Learn />} /> */}
+                <Route path="/about" element={<About />} />
                 <Route path="/cart" element={<Cart />} />
-                {/* <Route path="/search" element={<Search />} /> */}
-                {/* <Route path="/login" element={<Login />} /> */}
-                {/* <Route path="/signup" element={<Signup />} /> */}
+                <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<Signup />} />
             </Routes>
         </header>
     );

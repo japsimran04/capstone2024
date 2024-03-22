@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
-const ProfileComponent = () => {
+const Profile = () => {
     const router = useRouter();
 
     const [formData, setFormData] = useState({
@@ -134,4 +134,4 @@ const ProfileComponent = () => {
     );
 };
 
-export default ProfileComponent;
+export default Profile;

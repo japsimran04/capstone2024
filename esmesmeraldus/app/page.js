@@ -1,4 +1,3 @@
-
 "use client";
 
 import { BrowserRouter as Router,Routes, Route, Outlet } from "react-router-dom";

@@ -33,3 +33,24 @@ body {
     text-wrap: balance;
   }
 }
+
+.bg-custom-main-color {
+  background-color: #E9E5D6;
+}
+
+.text-color{
+  color: #E9E5D6;
+}
+
+.bg-custom-color {
+  background-color: #464E2E;
+}
+
+.bg-brown-color {
+  color: #362706;
+}
+
+
+.bg-bottom-quote {
+  background-color: #34713A;
+}

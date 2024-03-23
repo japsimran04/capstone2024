@@ -1,8 +1,3 @@
-import coffeecaturra from "../assets/products/coffeecaturra.png"; 
-import coffeesupremo from "../assets/products/coffeesupremo.png";
-import coffeeblend from "../assets/products/coffeeblend.png";
-import coffeeclassic from "../assets/products/coffeeclassic.png";
-import coffeelembo from "../assets/products/coffeelembo.png";
 
 export const PRODUCTS = [
     
@@ -10,31 +5,40 @@ export const PRODUCTS = [
         id: 0,
         productName: "Caturra",
         price: 18.50,
-        productImage: coffeecaturra,
+        productImage: "/products/coffeecaturra.png",
+        description: "TBD, go to data/products.js to add a description for this product."
+
     },
     {
         id: 1,
         productName: "Supremo",
         price: 17.50,
-        productImage: coffeesupremo,
+        productImage: "/products/coffeesupremo.png",
+        description: "TBD, go to data/products.js to add a description for this product."
+
     },
     {
         id: 2,
         productName: "Lembo",
         price: 16.50,
-        productImage: coffeelembo,
+        productImage: "/products/coffeelembo.png",
+        description: "TBD, go to data/products.js to add a description for this product."
     },
     {
         id: 3,
         productName: "Classic",
         price: 17.50,
-        productImage: coffeeclassic,
+        productImage: "/products/coffeeclassic.png",
+        description: "TBD, go to data/products.js to add a description for this product."
+
     },
     {
         id: 4,
         productName: "Blend",
         price: 18.50,
-        productImage: coffeeblend,
+        productImage: "/products/coffeeblend.png",
+        description: "TBD, go to data/products.js to add a description for this product."
+
     },
 
 ];

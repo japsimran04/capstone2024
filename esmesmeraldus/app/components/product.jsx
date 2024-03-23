@@ -1,8 +1,7 @@
-"use client";
-
 import React, { useContext } from "react";
 import { ShopContext } from "../context/shop-context";
 import Image from "next/image";
+import { Link } from "react-router-dom";
 
 export const Product = (props) => {
     const { id, productName, price, productImage} = props.data;
@@ -12,14 +11,16 @@ export const Product = (props) => {
 
     return (
         <div className="product">
-            <Image src={productImage} alt={productName} width={500} height={500} />
-             <div className="description">
-                <p> <b>{productName}</b> </p>
-                <p> ${price} </p>
-                <button className="addToCartButton" onClick={() => addToCart(id)}>
-                    Add to cart {cartItemAmount > 0 && (cartItemAmount)}
-                </button>
-            </div>
+            <Link to={`/product/${id}`}>
+                <Image src={productImage} alt={productName} width={500} height={500} />
+                <div className="description">
+                    <p> <b>{productName}</b> </p>
+                    <p> ${price} </p>
+                </div>
+            </Link>
+            <button className="addToCartButton" onClick={(event) => { event.preventDefault(); event.stopPropagation(); addToCart(id);}}> 
+                Add to cart {cartItemAmount > 0 && (cartItemAmount)}
+            </button>
         </div>
     );
 }

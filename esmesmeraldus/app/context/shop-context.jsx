@@ -47,7 +47,7 @@ export const ShopContextProvider = (props) => {
                 const additionalAmount = difference * productPrice;
                 const totalAmount = getTotalCartAmount() + additionalAmount;
                 if (totalAmount >= 0) {
-                    updatedCartItems[itemId] = newItemCount; // Update the item count
+                    updatedCartItems[itemId] = newItemCount;
                 }
             }
             return updatedCartItems;

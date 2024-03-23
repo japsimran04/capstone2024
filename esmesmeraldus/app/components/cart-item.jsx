@@ -15,7 +15,7 @@ const CartItem = ({ data }) => {
                 <p> ${price} </p>
                 <div className="countHandler">
                     <button onClick={() => removeFromCart(id)}> - </button>
-                    <input value ={cartItems[id]} onChange={(e) => updateCartItemCount(id, Number(e.target.value))}/>
+                    <input value={cartItems[id]} disabled />
                     <button onClick={() => addToCart(id)}> + </button>
                 </div>
             </div>

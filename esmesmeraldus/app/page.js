@@ -1,19 +1,32 @@
 "use client";
 
-import { BrowserRouter as Router,Routes, Route, Outlet } from "react-router-dom";
-import NavBar from "./components/nav-bar.jsx";
-import Footer from "./components/Footer";
-import ShopContextProvider from "./context/shop-context";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Shop from './pages/shop';
+import IndividualProduct from './pages/individualproduct';
+import NavBar from './components/nav-bar';
+import Footer from './components/footer';
+import { ShopContextProvider } from './context/shop-context';
+import PrivacyPolicy from './pages/privacy-policy';
+import TermsOfService from './pages/terms-of-service';
+import ReturnPolicy from './pages/return-policy';
+
 
 function Page() {
   return (
     <ShopContextProvider>
       <Router>
         <NavBar />
-        <Outlet />
+        <Routes>
+          <Route path="/products" element={<Shop />} />
+          <Route path="/product/:id" element={<IndividualProduct />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/return-policy" element={<ReturnPolicy />} />
+        </Routes>
         <Footer />
       </Router>
     </ShopContextProvider>
   );
 }
+
 export default Page;

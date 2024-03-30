@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
 
+
+/*Vazirmatn font another import for fonts */
 /*This is for the H1 title font*/
 .cart-title {
     font-family: 'Playfair', serif;
@@ -11,7 +13,7 @@
 
 }
 
-/* empty message Vazirmatn font*/
+/* empty message */
 .empty-cart {
     font-family: 'Playfair', serif;
     font-weight: 400;
@@ -24,90 +26,179 @@
     font-family: 'Playfair', serif;
     font-weight: 200;
     font-size: 1.2em;
-    text-align: center;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    color: green; 
+    margin-top: 35px;
+}
 
+/* overall edits to the whole cart page*/
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*edits the shopping cart title*/
+.cart-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/***This is editing the cart-item.jsx***/
+.cart-item {
+    display: grid;
+    grid-template-columns: auto minmax(200px, 3fr) 100px 100px auto;
+    grid-template-rows: auto; /* This line will ensure there is no extra space allocated to rows */
+    gap: 16px;
+    align-items: start;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 
-.checkout {
-    font-family: 'Playfair', serif;
-    font-weight: 200;
-    font-size: 1.5em;
-    text-align: center;
-    color: #E9E5D6; /* Sets the text color */
-    background-color: green; /* Sets the background color */
-    border: 2px solid green; /* Sets the border color and thickness */
-    padding: 10px 20px; /* Adds some padding inside the button */
-    cursor: pointer; /* Changes the mouse cursor to a pointer when hovered */
-    min-width: 32%; 
-    /* Optional: If you want rounded corners */
-    border-radius: 5px;
-    margin-top: 35px
+/*edits layout of the item's image of the product*/
+.cart-item-image-container {
+    grid-column: 1;
+}
+
+
+.product-image {
+    width: 100px; /* Adjust the width of the image */
+    height: auto;
+}
+
+/*edits the cart-item.jsx which are the price, quantity, the image and title of the product*/
+.cart-item-details {
+    grid-column: 2 / span 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cart-item-title, .cart-item-price {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3;
+    margin-top: -20px;
+}
+
+.cart-item-quantity button {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #f5f5f5;
+    border: 1px solid #e1e1e1;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-item-quantity span {
+    margin: 0 10px;
+}
+
+/* Price and Action Styles */
+.cart-item-total {
+    grid-column: 4;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Subtotal and Checkout Button Styles */
+.cart-summary {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    padding-top: 1px;
+}
+
+.subtotal-container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    width: 100%; 
 }
 
 .subtotal-text {
     font-family: 'Playfair', serif;
-    font-weight: 200;
+    flex: 1;
+    text-align: right;
+    margin-right: 10px; 
     font-size: 1.5em;
-    margin-left: auto;
-    padding-left: 35%;
-
 }
+
 .subtotal-number {
-    font-family: 'Playfair', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 200;
-    font-size: 1.5em;
-    margin-left: auto;
-    padding-left: 24%;
-
+    font-size: 1.4em;
+    text-align: right;
+    display: block; 
 }
 
-.cartItems {
-    font-family: 'Playfair', serif;
-    font-weight: 200;
-    font-size: 1.0em;
-    margin-left: auto;
-    padding-left: 25%;
-
-}
-
-.cart-item-line {
-    padding-bottom: 20px; 
-    margin-bottom: 20px; 
-    border-bottom: 1px solid black; 
-}
-
-.cart-items-setup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding-top: 70px; 
-    padding-bottom: 70px;
-    width: 100%;
-    max-width: 1200px;
-    font-family: 'Playfair', serif;
-    font-weight: 200;
-    font-size: 1.2em;
-}
-
-.cartItem, .cart-item-line {
-    box-sizing: border-box; 
-}
-
+/*edits both the checkout button and continue to shop button*/
 .cart-actions {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    gap: 40px; 
+    justify-content: space-between; 
+    width: 100%; 
+    margin-top: 10px; 
 }
 
-.line {
-    width: 40%; /* Adjust the width as needed */
-    border: none; /* Remove the border */
-    border-top: 1px solid #000; /* Add a border only on the top to create the line */
-    margin: 20px auto; /* Centers the line horizontally and adds margin above and below */
+.checkout {
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+    font-size: 1.5em;
+    color: #E9E5D6;
+    background-color: green;
+    border: 2px solid green;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 35px;
 }
 
+.cart-item-price {
+    text-align: right;
+    margin-top: -18px; 
+}
 
+.cart-titles {
+    display: flex;
+    grid-template-columns: repeat(5, 1fr); 
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.cart-item-title {
+    font-size: 1em; 
+    margin: 0; 
+    padding: 0;
+}
+
+.cart-item-title.product {
+    grid-column: 1 / 2;
+    text-align: left;
+}
+
+.cart-item-title.quantity {
+    justify-self: start; 
+}
+
+.cart-item-title.price {
+    justify-self: start; /* Adjust as needed */
+    padding-left: 40px;
+}

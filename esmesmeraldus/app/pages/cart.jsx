@@ -16,6 +16,13 @@ const Cart = () => {
         <div className="cart-container"> 
             <h1 className="cart-title">Shopping Cart</h1>
             <hr className="line" />
+            {totalAmount > 0 && (
+                <div className="cart-titles">
+                    <span className="cart-item-title product">Product</span>
+                    <span className="cart-item-title quantity">Quantity</span>
+                    <span className="cart-item-title price">Price</span>
+                </div>
+            )}
             <div className="cart-items-setup">
                 {PRODUCTS.map((Product) => {
                     if (cartItems[Product.id] !== 0) {
@@ -26,15 +33,15 @@ const Cart = () => {
             </div>
             {totalAmount > 0 ? (
                 <div className="cart-summary">
-                    <div className="subtotal-container">
+                <div className="subtotal-container">
                     <span className="subtotal-text">Subtotal:</span>
-                    <span className="subtotal-number">${totalAmount}</span>
-                    </div>
-                    <div className="cart-actions">
-                        <button className="checkout" onClick={() => navigate("/checkout")}>Checkout</button>
-                        <button className="go-back-shopping" onClick={() => navigate("/shop")}>Continue Shopping</button>
-                    </div>
+                    <span className="subtotal-number">${totalAmount.toFixed(2)}</span>
                 </div>
+                <div className="cart-actions">
+                    <button className="go-back-shopping" onClick={() => navigate("/shop")}>Continue Shopping</button>
+                    <button className="checkout" onClick={() => navigate("/checkout")}>Checkout</button>
+                </div>
+            </div>
             ) : (
                 <h1 className="empty-cart"> Your Cart is Empty</h1>
             )}

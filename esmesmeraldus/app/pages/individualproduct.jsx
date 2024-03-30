@@ -9,7 +9,7 @@ const IndividualProduct = () => {
   const { addToCart, cartItems, products } = useContext(ShopContext);
 
   const product = PRODUCTS.find(product => product.id === Number(id));
-  const { productName, price, productImage } = product;
+  const { productName, price, productImage, description } = product;
 
   const cartItemAmount = cartItems[id]
 

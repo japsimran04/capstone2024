@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import Homepage from "../pages/homepage";
 import Shop from "../pages/shop";
 import About from "../pages/about.js"; 
 import Cart from "../pages/cart";
@@ -40,7 +41,7 @@ const NavBar = () => {
                 <SearchBar onSearch={handleSearch} />
             </div>
             <Routes>
-                <Route path="/"/>
+                <Route path="/" element={<Homepage />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/cart" element={<Cart />} />

@@ -11,6 +11,7 @@ import TermsOfService from './pages/terms-of-service';
 import ReturnPolicy from './pages/return-policy';
 
 
+
 function Page() {
   return (
     <ShopContextProvider>

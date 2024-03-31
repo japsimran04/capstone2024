@@ -1,0 +1,279 @@
+/*** Code below is editing the picture **/
+.picture-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Add styles for the button */
+/* #E6CE69 THE COLOR yellow */
+.shop-button {
+    font-family: 'Playfair', serif;
+    position: absolute; 
+    bottom: 31%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 10px 40px; 
+    background-color: #3D8244; 
+    color: #f0f0f0; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1.3em; 
+    background-size: cover; 
+    box-shadow: 0 0 5px rgba(24, 80, 36, 0.5);
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .picture-container {
+        height: 50vh; 
+    }
+}
+
+/***Featured Products***/
+
+.featured-products-section {
+    background-color: #f0f0f0; /* A light green background; change the color as desired */
+    padding: 20px; /* Add padding to ensure there's space around the content */
+}
+
+.featured-products-title {
+    font-family: 'Playfair', serif;
+    text-align: center;
+    font-size: 2.0em; 
+    margin-bottom: 20px; 
+}
+
+/* This styles the grid container */
+.featured-products-grid {
+    display: flex; /* Enables flexbox layout mode */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Centers the items vertically, if needed */
+    flex-wrap: wrap; /* Allows items to wrap to next line as needed */
+    gap: 40px; /* Adds some space between the items */
+}
+
+/* This styles each product card */
+.featured-product-card {
+    font-family: 'Playfair', serif;
+    font-size: 1.0em; 
+    width: 300px; /* Adjust width as desired */
+    height: 400px; /* Adjust height as desired */
+    padding: 20px; /* Adjust padding as desired */
+    margin: 10px; /* Adjust margin as desired */
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start items at the top of the container */
+    align-items: center;
+    /* Remove justify-content: space-between; if it's pushing elements too far apart */
+    height: 400px;   /* Additional styles like border, box-shadow, etc., can be added here */
+}
+
+/* Additional responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .featured-products-grid {
+        flex-direction: column; /* Stacks the items vertically on small screens */
+    }
+    .featured-product-card {
+        max-width: 100%; /* Allows the cards to expand full width on small screens */
+    }
+}
+
+
+/* This styles the image container */
+.product-image-container {
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* This styles the product description that appears on hover */
+.product-description {
+    font-family: 'Vazirmatn', serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7); /* Semi-transparent black background */
+    color: #f0f0f0; /* White text color */
+    visibility: hidden; /* Hidden by default */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear; /* Smooth transition for the hover effect */
+    padding: 10px;
+    border-radius: 15px; 
+}
+
+/* This styles the image and description when the product card is hovered over */
+.featured-product-card:hover .product-description {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Ensure the image links fill the container for proper hover effect */
+.featured-product-card a {
+    display: block;
+    height: 100%;
+}
+
+/* Style adjustments for the image */
+.featured-product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* You may want to set a consistent height here if images are different sizes */
+    max-height: 400px; /* Adjust as needed */
+    object-fit: contain; /* This will ensure that the image is fully visible */
+    margin-bottom: auto; 
+}
+
+.featured-product-card h3,
+.featured-product-card .price {
+    text-align: center; /* Center the text */
+    width: 100%; /* Full width to ensure centering within the card */
+
+}
+
+.featured-product-card h3 {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    /* If titles are of different lengths and wrapping to new lines, ensure a consistent height */
+    min-height: 3em; /* Adjust this value as needed so it can accommodate the tallest expected title */
+    margin: 0 0 1px; 
+    font-size: 1.3em;
+}
+
+.featured-product-card .price {
+    font-weight: bold;
+    color: #3D8244;
+    margin-top: auto; /* Pushes the price to the bottom */
+    width: 100%; /* Full width to ensure centering within the card */
+    text-align: center;/* Consistent margin at the bottom */
+}
+
+
+/***Blog section**/
+.blog-section {
+    font-family: 'Playfair', serif;
+    text-align: center;
+    background-color: #34713A; 
+    padding: 20px;
+}
+
+/*Title*/
+/*yellow #E6CE69*/
+.Our-blog-title {
+    color: #f0f0f0;
+    font-family: 'Playfair', serif;
+    font-size: 2.0em; 
+    margin-bottom: 20px;
+}
+
+.blog-description {
+    color: #f0f0f0;
+    font-size: 1.2em; 
+    margin-bottom: 20px;
+}
+
+
+.blog-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 300px; 
+    margin-bottom: 30px; 
+    padding: 15px; 
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.blog-card h2 {
+    font-size: 1.2em; 
+    min-height: 60px; 
+    margin: 10px 0; 
+}
+
+.blog-card p {
+    font-size: 1em; 
+    min-height: 120px; 
+    margin-bottom: 10px; 
+}
+
+.more-link {
+    display: block;
+    text-align: center;
+    margin-top: auto; 
+    padding: 10px 0; 
+    font-weight: bold;
+    color: #F0EEE5;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.more-link-one{
+    display: block;
+    text-align: center;
+    margin-top: auto; 
+    padding: 10px 0; 
+    font-weight: bold;
+    color: #34713A;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.more-link-two{
+    display: block;
+    text-align: center;
+    margin-top: auto; 
+    padding: 10px 0; 
+    font-weight: bold;
+    color: #34713A;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.more-link-three{
+    display: block;
+    text-align: center;
+    margin-top: auto; 
+    padding: 10px 0; 
+    font-weight: bold;
+    color: #34713A;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

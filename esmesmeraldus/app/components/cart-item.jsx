@@ -15,7 +15,7 @@ const CartItem = ({ data }) => {
             </div>
             <div className="cart-item-details">
                 <div className="cart-item-title">{productName}</div>
-                <div className="cart-item-price">${price}</div>
+                <div className="cart-item-price">${price.toFixed(2)}</div>
                 <div className="cart-item-quantity">
                     <button onClick={() => removeFromCart(id)}>-</button>
                     <span>{cartItems[id]}</span>

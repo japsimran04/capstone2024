@@ -25,7 +25,7 @@ const Homepage = () => {
                                 <div className="product-image-container">
                                     <img src={product.productImage} alt={product.productName} />
                                     <div className="product-description">
-                                        {product. Tastingnotes} {/* You will need to have descriptions in your product data */}
+                                        {product.notes} 
                                     </div>
                                 </div>
                             </Link>

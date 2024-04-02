@@ -14,8 +14,7 @@
     object-fit: cover; 
 }
 
-/* Add styles for the button */
-/* #E6CE69 THE COLOR yellow */
+/* Add styles for the button*/
 .shop-button {
     font-family: 'Playfair', serif;
     position: absolute; 
@@ -23,8 +22,8 @@
     left: 50%; 
     transform: translateX(-50%); 
     padding: 10px 40px; 
-    background-color: #3D8244; 
-    color: #f0f0f0; 
+    background-color: #E6CE69; 
+    color: black; 
     border: none; 
     border-radius: 5px; 
     cursor: pointer; 
@@ -45,8 +44,8 @@
 /***Featured Products***/
 
 .featured-products-section {
-    background-color: #f0f0f0; /* A light green background; change the color as desired */
-    padding: 20px; /* Add padding to ensure there's space around the content */
+    background-color: #f0f0f0; 
+    padding: 20px; 
 }
 
 .featured-products-title {
@@ -58,37 +57,36 @@
 
 /* This styles the grid container */
 .featured-products-grid {
-    display: flex; /* Enables flexbox layout mode */
-    justify-content: center; /* Centers the items horizontally */
-    align-items: center; /* Centers the items vertically, if needed */
-    flex-wrap: wrap; /* Allows items to wrap to next line as needed */
-    gap: 40px; /* Adds some space between the items */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 40px; 
 }
 
 /* This styles each product card */
 .featured-product-card {
     font-family: 'Playfair', serif;
     font-size: 1.0em; 
-    width: 300px; /* Adjust width as desired */
-    height: 400px; /* Adjust height as desired */
-    padding: 20px; /* Adjust padding as desired */
-    margin: 10px; /* Adjust margin as desired */
+    width: 300px; 
+    height: 400px; 
+    padding: 20px; 
+    margin: 10px; 
     display: flex;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Start items at the top of the container */
+    justify-content: flex-start; 
     align-items: center;
-    /* Remove justify-content: space-between; if it's pushing elements too far apart */
-    height: 400px;   /* Additional styles like border, box-shadow, etc., can be added here */
+    height: 400px;   
 }
 
 /* Additional responsiveness for smaller screens */
 @media (max-width: 768px) {
     .featured-products-grid {
-        flex-direction: column; /* Stacks the items vertically on small screens */
+        flex-direction: column; 
     }
     .featured-product-card {
-        max-width: 100%; /* Allows the cards to expand full width on small screens */
+        max-width: 100%; 
     }
 }
 
@@ -107,11 +105,11 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.7); /* Semi-transparent black background */
-    color: #f0f0f0; /* White text color */
-    visibility: hidden; /* Hidden by default */
+    background-color: rgba(0,0,0,0.7); 
+    color: #f0f0f0; 
+    visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear; /* Smooth transition for the hover effect */
+    transition: visibility 0s, opacity 0.5s linear; 
     padding: 10px;
     border-radius: 15px; 
 }
@@ -133,16 +131,15 @@
     width: 100%;
     height: auto;
     display: block;
-    /* You may want to set a consistent height here if images are different sizes */
-    max-height: 400px; /* Adjust as needed */
-    object-fit: contain; /* This will ensure that the image is fully visible */
+    max-height: 400px; 
+    object-fit: contain; 
     margin-bottom: auto; 
 }
 
 .featured-product-card h3,
 .featured-product-card .price {
-    text-align: center; /* Center the text */
-    width: 100%; /* Full width to ensure centering within the card */
+    text-align: center; 
+    width: 100%; 
 
 }
 
@@ -150,8 +147,7 @@
     margin-top: 20px;
     text-align: center;
     width: 100%;
-    /* If titles are of different lengths and wrapping to new lines, ensure a consistent height */
-    min-height: 3em; /* Adjust this value as needed so it can accommodate the tallest expected title */
+    min-height: 3em; 
     margin: 0 0 1px; 
     font-size: 1.3em;
 }
@@ -159,9 +155,9 @@
 .featured-product-card .price {
     font-weight: bold;
     color: #3D8244;
-    margin-top: auto; /* Pushes the price to the bottom */
-    width: 100%; /* Full width to ensure centering within the card */
-    text-align: center;/* Consistent margin at the bottom */
+    margin-top: auto; 
+    width: 100%; 
+    text-align: center;
 }
 
 
@@ -174,7 +170,6 @@
 }
 
 /*Title*/
-/*yellow #E6CE69*/
 .Our-blog-title {
     color: #f0f0f0;
     font-family: 'Playfair', serif;
@@ -232,7 +227,7 @@
     margin-top: auto; 
     padding: 10px 0; 
     font-weight: bold;
-    color: #F0EEE5;
+    color: #f0f0f0;
     text-decoration: none;
     background: none;
     border: none;
@@ -277,3 +272,4 @@
     border: none;
     cursor: pointer;
 }
+

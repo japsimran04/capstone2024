@@ -1,0 +1,186 @@
+
+/*Colors the background    font-family: 'Vazirmatn', serif;*/
+.page-background {
+  background-color: #f0f0f0;
+}
+
+/***The code below will edit the text for the product***/
+.page-title-product-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.page-acidity-text{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.page-product-price-text{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6em;
+}
+
+.page-product-text{
+  font-family: 'Vazirmatn', serif;
+
+}
+
+.select-bean-title {
+  font-family: 'Playfair Display', serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);; /* Change #000 to whatever color you want the line to be */
+  padding-bottom: 10px; /* Adjust padding to space out the border from the text */
+  margin-bottom: 20px; /* Adjust margin to space out the border from the next elements */
+}
+/*The code below edits the bean type button*/
+.beanTypeButton {
+    font-family: 'Vazirmatn', serif;
+    border: 2px solid transparent; /* Invisible border by default */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for visual effect */
+    margin: 5px;
+    font-size: 1.0em; 
+}
+  
+.beanTypeButton.selected {
+    border-color: #3D8244; /* Change only the border color for selected state */
+}
+
+/*This edits the size of the description of the notes*/
+.descriptionnotes {
+    max-width: 500px;
+    border-radius: 5px;
+
+}
+
+
+/* This edits the quantity button and adds more space below */
+.cart-item-quantity-page {
+  display: flex;
+  margin: 10px 0 20px; /* Increased bottom margin to 20px */
+  margin-left: auto; /* This will push the cart-item-quantity to the right */
+  margin-right: auto; /* Centering it by setting this to auto *//* Center the quantity controls horizontally */
+}
+
+/*Edits the buttons for the quantity*/
+.cart-item-quantity-page button {
+  font-family: 'Vazirmatn', serif;
+  padding: 3px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: black;
+  color: #f0f0f0;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+
+.cart-item-quantity-page span {
+  min-width: 20px; /* Ensure the number doesn't shift buttons when changing */
+  display: inline-block;
+  text-align: center;
+}
+/* Adjusts the Add to Cart button */
+.addToCartButton {
+  font-family: 'Playfair Display', serif;
+  padding: 10px 20px;
+  margin-top: 30px; /* Ensure there's space between the quantity controls and the button */
+  cursor: pointer;
+  background-color: #E6CE69;
+  color: black;
+  border: none;
+  transition: background-color 0.3s ease;
+  display: block; /* Make the button a block element to fill the width */
+  width: 56%; /* Optional: to make the button stretch to the full container width */
+  border-radius: 5px;
+}
+
+.productContainer {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the start of the container */
+  justify-content: space-between; /* Creates space between the children */
+  max-width: 1200px; /* Maximum width of the product container */
+  margin: 0 auto; /* Centers the container on the page */
+  padding: 0 20px; /* Optional padding to ensure content doesn't touch the edges */
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center; /* Center the imageWrapper div */
+  align-items: center;
+  position: relative; /* Needed for absolute positioning of children */
+  padding: 0 30px; /* Padding should be at least half the width of the arrow buttons */
+}
+
+.productDetails {
+  flex: 1; /* Takes up the remaining space */
+  padding-left: 20px; /* Adds padding to the left of the product details */
+  max-width: 500px; /* Maximum width of the product details, adjust as needed */
+}
+
+
+/* Style the arrow buttons */
+.arrowButton {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust the position to center the button */
+  background-color: rgba(0, 0, 0, 0.5); /* Translucent white background */
+  color: #000000; /* Black arrow */
+  border: 2px solid #000000; /* Black border */
+  border-radius: 60%; /* Make it round */
+  width: 40px; /* Fixed width for the circle */
+  height: 40px; /* Fixed height for the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0; /* Remove padding to avoid stretching */
+  line-height: 30px; /* Align the text vertically */
+  font-weight: 100;
+  cursor: pointer;
+  font-size: 25px; /* Arrow size */
+  z-index: 2;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Darken the arrow buttons on hover 
+
+background-color: rgba(0, 0, 0, 0.5);*/
+.arrowButton:hover {
+  background-color: rgba(230, 206, 105, 1); /* Translucent dark grey background */
+  color: black; /* White arrow on hover */
+}
+
+
+.arrowButton.left {
+  left: 30px; /* Adjust as necessary */
+}
+
+/* Adjust the right arrow button to be positioned on the right side of the image */
+.arrowButton.right {
+  right: 30px; /* Adjust as necessary */
+}
+
+.imageWrapper {
+  display: inline-block; /* Wrap the image component */
+  position: relative; /* To overlay the buttons on top */
+  line-height: 0; /* Remove space below the image */
+}
+
+.productDetails {
+  flex: 1;
+  /* Add padding on the left to give some space between image and text */
+  padding-right: 20px;
+  /* Adjust padding and margins as necessary */
+}
+
+/* Adjust your media queries for responsiveness */
+@media (min-width: 1200px) {
+  .productContainer {
+    justify-content: center; /* Center the items when there's enough space */
+  }
+}
+

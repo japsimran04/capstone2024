@@ -15,12 +15,13 @@ export const Product = (props) => {
                 <Image src={productImage} alt={productName} width={500} height={500} />
                 <div className="description">
                     <p> <b>{productName}</b> </p>
-                    <p> ${price} </p>
+                    <p> ${price.toFixed(2)} </p>
+                    
                 </div>
             </Link>
-            <button className="addToCartButton" onClick={(event) => { event.preventDefault(); event.stopPropagation(); addToCart(id);}}> 
+            {/*<button className="addToCartButton" onClick={(event) => { event.preventDefault(); event.stopPropagation(); addToCart(id);}}> 
                 Add to cart {cartItemAmount > 0 && (cartItemAmount)}
-            </button>
+            </button>*/}
         </div>
     );
 }

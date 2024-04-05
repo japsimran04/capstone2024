@@ -10,6 +10,7 @@ const IndividualProduct = () => {
   const { addToCart, removeFromCart, cartItems } = useContext(ShopContext);
   const [beanType, setBeanType] = useState('whole');
   const [quantity, setQuantity] = useState(0); // Add this line to manage quantity state
+ // const { addToCart, cartItems, products} = useContext(ShopContext);
 
   const product = PRODUCTS.find(product => product.id === Number(id));
   const { productName, price, productpageimage, notesimage, descriptionnotes, notes2, acidity, altitude, temperature } = product;

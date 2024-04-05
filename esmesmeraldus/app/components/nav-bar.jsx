@@ -10,6 +10,7 @@ import Login from "./login";
 import Signup from "./signup";
 import SearchBar from "../components/search-bar";
 import Image from "next/image";
+import "../styles/nav-bar.css";
 
 const NavBar = () => {
     const navigate = useNavigate();
@@ -28,7 +29,7 @@ const NavBar = () => {
                 Free delivery for purchases of $50 or over! Only in Calgary!
             </div>
             <div className="Header">
-                <Image src="/icons/logo.png" alt="Esmeraldus Colombian Coffee" width={500} height={500} />
+                <Image src="/icons/logo.png" alt="Esmeraldus Colombian Coffee" width={200} height={200} />
                 <h1>Esmeraldus Colombian Coffee</h1>
             </div>
             <div className="user-actions">

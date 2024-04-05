@@ -1,9 +1,3 @@
-
-/*Colors the background    font-family: 'Vazirmatn', serif;*/
-.page-background {
-  background-color: #f0f0f0;
-}
-
 /***The code below will edit the text for the product***/
 .page-title-product-text {
   font-family: 'Playfair Display', serif;
@@ -11,6 +5,10 @@
   font-weight: 500;
   font-size: 2.5em;
   margin-top: 10px;
+}
+
+.page-background{
+  background-color: #f0f0f0;
 }
 
 .page-acidity-text{

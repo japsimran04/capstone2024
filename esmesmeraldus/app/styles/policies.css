@@ -1,0 +1,44 @@
+/* How page will be laid out, background and text color*/
+.center-wrapper-policies {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Minimum height of 100% of the viewport height */
+    text-align: center; /* Ensure text and inline elements are centered as well */
+    background-color: #f0f0f0; /* Sets background color for this page specifically */
+    width: 100vw; /* Ensures it covers the full width */
+    flex-direction: column; /* Ensures the content flows vertically */
+    color: #333;
+}
+
+.policy-page-edit {
+    width: 80%; /* or any specific width you prefer */
+    max-width: 1200px; /* Maximum width to ensure readability */
+    margin: auto; /* Center horizontally if not using flexbox for the wrapper */
+    /* Additional styles for .policy-page-edit here */
+}
+
+.title-policies {
+    font-family: 'Playfair Display', serif;
+
+    font-weight: 500;
+    font-size: 2.0em;
+    margin-top: 10px;
+    text-align: center;
+    /* Additional styles for .title-policies here */
+}
+
+.description-policies{
+    font-family: 'Vazirmatn', serif;
+    font-size: 1.0em;
+    margin-top: 10px;
+    text-align: left;
+    /* Additional styles for .description-policies here */
+}
+
+.h3-policies{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-align: left;
+}

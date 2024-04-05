@@ -30,6 +30,7 @@
   color: #333;
   border: none;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .footer-social-media a {
@@ -77,7 +78,7 @@
 .subscriber-news-text {
     font-family: 'Vazirmatn', serif;
     color: #f0f0f0;
-    font-size: 1.0em;
+    font-size: 0.9em;
     margin-top: 10px;
 }
 

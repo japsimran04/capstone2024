@@ -1,35 +1,38 @@
-
-/*Colors the background    font-family: 'Vazirmatn', serif;*/
-.page-background {
-  background-color: #f0f0f0;
-}
-
 /***The code below will edit the text for the product***/
 .page-title-product-text {
   font-family: 'Playfair Display', serif;
+  color: #333;
   font-weight: 500;
   font-size: 2.5em;
   margin-top: 10px;
 }
 
+.page-background{
+  background-color: #f0f0f0;
+}
+
 .page-acidity-text{
   font-family: 'Playfair Display', serif;
+  color: #333;
   font-size: 1.2em;
   margin-top: 10px;
 }
 
 .page-product-price-text{
   font-family: 'Playfair Display', serif;
+  color: #333;
   font-size: 1.6em;
 }
 
 .page-product-text{
   font-family: 'Vazirmatn', serif;
+  color: #333;
 
 }
 
 .select-bean-title {
   font-family: 'Playfair Display', serif;
+  color: #333;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);; /* Change #000 to whatever color you want the line to be */
   padding-bottom: 10px; /* Adjust padding to space out the border from the text */
   margin-bottom: 20px; /* Adjust margin to space out the border from the next elements */
@@ -37,6 +40,7 @@
 /*The code below edits the bean type button*/
 .beanTypeButton {
     font-family: 'Vazirmatn', serif;
+    color: #333;
     border: 2px solid transparent; /* Invisible border by default */
     padding: 10px 20px;
     cursor: pointer;
@@ -71,7 +75,7 @@
   padding: 3px 10px;
   margin: 0 5px;
   cursor: pointer;
-  background-color: black;
+  background-color: #333;
   color: #f0f0f0;
   border: none;
   transition: background-color 0.3s ease;
@@ -87,15 +91,15 @@
 .addToCartButton {
   font-family: 'Playfair Display', serif;
   padding: 10px 20px;
-  margin-top: 30px; /* Ensure there's space between the quantity controls and the button */
   cursor: pointer;
   background-color: #E6CE69;
-  color: black;
+  color: #333;
   border: none;
   transition: background-color 0.3s ease;
-  display: block; /* Make the button a block element to fill the width */
-  width: 56%; /* Optional: to make the button stretch to the full container width */
+  display: block;
+  width: 56%;
   border-radius: 5px;
+  margin-bottom: 70px; /* Add this line to create space between the button and the footer */
 }
 
 .productContainer {
@@ -119,6 +123,7 @@
   flex: 1; /* Takes up the remaining space */
   padding-left: 20px; /* Adds padding to the left of the product details */
   max-width: 500px; /* Maximum width of the product details, adjust as needed */
+  color: #333;
 }
 
 
@@ -128,8 +133,8 @@
   top: 50%; /* Center vertically */
   transform: translateY(-50%); /* Adjust the position to center the button */
   background-color: rgba(0, 0, 0, 0.5); /* Translucent white background */
-  color: #000000; /* Black arrow */
-  border: 2px solid #000000; /* Black border */
+  color: #333; /* Black arrow */
+  border: 2px solid #333; /* Black border */
   border-radius: 60%; /* Make it round */
   width: 40px; /* Fixed width for the circle */
   height: 40px; /* Fixed height for the circle */
@@ -151,7 +156,7 @@
 background-color: rgba(0, 0, 0, 0.5);*/
 .arrowButton:hover {
   background-color: rgba(230, 206, 105, 1); /* Translucent dark grey background */
-  color: black; /* White arrow on hover */
+  color: #333;/* White arrow on hover */
 }
 
 

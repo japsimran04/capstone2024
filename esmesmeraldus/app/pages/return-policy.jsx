@@ -1,10 +1,12 @@
 import React from "react";
+import "../Styles/policies.css";
 
 const ReturnPolicy = () => {
     return (
-        <div>
-            <h1>Return Policy</h1>
-            <ul>
+        <div className="center-wrapper-policies">
+            <div className='policy-page-edit'>
+            <h1 className='title-policies'>Return Policy</h1>
+            <ul className='description-policies'>
                 <li>We do not accept returns for open coffee bags.</li>
                 <li>Products can be returned or exchanged within 30 days of purchase.</li>
                 <li>Grinders can be exchanged within 60 days of purchase.</li>
@@ -15,8 +17,9 @@ const ReturnPolicy = () => {
                 <li>The time it takes for your exchanged product to reach you may vary depending on your location.</li>
                 <li>For items over $80, please use a trackable shipping service or purchase shipping insurance to ensure that we receive your returned item.</li>
             </ul>
-            <p>We reserve the right to refuse any returns that do not meet our return policy requirements.</p>
-            <p>If you have any questions or concerns regarding our return policy, please do not hesitate to contact us at <a href="mailto:esmeralduscoffee@gmail.com">esmeralduscoffee@gmail.com</a>.</p>
+            <p className='description-policies'>We reserve the right to refuse any returns that do not meet our return policy requirements.</p>
+            <p className='description-policies'>If you have any questions or concerns regarding our return policy, please do not hesitate to contact us at <a href="mailto:esmeralduscoffee@gmail.com">esmeralduscoffee@gmail.com</a>.</p>
+        </div>
         </div>
     );
 }

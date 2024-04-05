@@ -31,14 +31,14 @@ const IndividualProduct = () => {
     //array to hold the images
     const images = [productpageimage, notesimage];
 
-  useEffect(() => {
-    if (cartItems[id]) {
-      setQuantity(cartItems[id]);
-    } else {
-      setQuantity(0);
-    }
+    useEffect(() => {
+      if (cartItems[id]) {
+        setQuantity(cartItems[id].quantity);
+      } else {
+        setQuantity(0);
+      }
   }, [cartItems, id]);
-
+  
   const handleAddToCart = () => {
     if (quantity > 0) {
       addToCart(id, beanType, quantity); // Add to cart with current quantity
@@ -76,7 +76,7 @@ const IndividualProduct = () => {
           <div className="productDetails">
             <h1 className="page-title-product-text">{productName}</h1>
               <p className="page-acidity-text">{acidity}</p>
-              <p className="page-product-price-text">${price.toFixed(2)}</p>
+              <p className="page-product-price-text">CAD${price.toFixed(2)}</p>
             <div className="page-product-text">
             <p>{notes2}</p>
             <p>{altitude}</p>
@@ -87,6 +87,7 @@ const IndividualProduct = () => {
               <h3 className="select-bean-line select-bean-title">Select Bean Type</h3>
               <button className={`beanTypeButton ${beanType === 'whole' ? 'selected' : ''}`} onClick={() => setBeanType('whole')}>Whole Bean</button>
               <button className={`beanTypeButton ${beanType === 'ground' ? 'selected' : ''}`} onClick={() => setBeanType('ground')}>Ground Bean</button>
+
             </div>
             <h3 className="select-bean-line select-bean-title">Quantity</h3>
             <div className="cart-operations-container">

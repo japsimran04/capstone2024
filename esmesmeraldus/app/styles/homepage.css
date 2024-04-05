@@ -23,7 +23,7 @@
     transform: translateX(-50%); 
     padding: 10px 40px; 
     background-color: #E6CE69; 
-    color: black; 
+    color: #333; 
     border: none; 
     border-radius: 5px; 
     cursor: pointer; 
@@ -50,6 +50,7 @@
 
 .featured-products-title {
     font-family: 'Playfair', serif;
+    color: #333;
     text-align: center;
     font-size: 2.0em; 
     margin-bottom: 20px; 
@@ -67,6 +68,7 @@
 /* This styles each product card */
 .featured-product-card {
     font-family: 'Playfair', serif;
+    color: #333;
     font-size: 1.0em; 
     width: 300px; 
     height: 400px; 
@@ -101,6 +103,7 @@
 /* This styles the product description that appears on hover */
 .product-description {
     font-family: 'Vazirmatn', serif;
+    color: #333;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -144,6 +147,7 @@
 }
 
 .featured-product-card h3 {
+    color: #333;
     margin-top: 20px;
     text-align: center;
     width: 100%;
@@ -220,6 +224,12 @@
     min-height: 120px; 
     margin-bottom: 10px; 
 }
+
+.blog-color-text {
+    color: #333;
+}
+
+/*Links*/
 
 .more-link {
     display: block;

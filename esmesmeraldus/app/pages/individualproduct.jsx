@@ -75,7 +75,7 @@ const IndividualProduct = () => {
           <div className="productDetails">
             <h1 className="page-title-product-text">{productName}</h1>
               <p className="page-acidity-text">{acidity}</p>
-              <p className="page-product-price-text">${price.toFixed(2)}</p>
+              <p className="page-product-price-text">CAD${price.toFixed(2)}</p>
             <div className="page-product-text">
             <p>{notes2}</p>
             <p>{altitude}</p>

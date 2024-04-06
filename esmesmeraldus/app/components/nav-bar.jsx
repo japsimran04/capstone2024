@@ -12,6 +12,7 @@ import SearchBar from "../components/search-bar";
 import Image from "next/image";
 import "../styles/nav-bar.css";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const NavBar = () => {
     const navigate = useNavigate();
@@ -39,6 +40,11 @@ const NavBar = () => {
                 <button onClick={() => handleNavigation("/shop")}>Shop<ExpandMoreIcon/></button>   
                 <button onClick={() => handleNavigation("/about")}>About<ExpandMoreIcon/></button> 
                 <button onClick={() => handleNavigation("/cart")}>Cart<ExpandMoreIcon/></button>   
+
+                <div className="Icons">
+                <ShoppingCartIcon/>
+                </div>
+            
            </div>
            </div>
             <Routes>

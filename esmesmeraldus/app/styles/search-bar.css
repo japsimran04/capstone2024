@@ -6,11 +6,11 @@
 }
 
 .search-bar.expanded {
-    width: 400px; /* Set the expanded width */
+    width: 200px; /* Set the expanded width */
 }
 
 .search-bar.expanded .search-input {
-    width: 200%x; /* Expand input to fill available space */
+    width: 20%; /* Expand input to fill available space */
 }
 
 .search-input {
@@ -19,4 +19,5 @@
 
 .search-button {
     margin-left: 5px; /* Add margin between input and button */
+    height: 20px;
 }

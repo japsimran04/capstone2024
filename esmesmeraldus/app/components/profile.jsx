@@ -36,17 +36,17 @@ const Profile = () => {
 
     return (
         <>
-            <h1 className="font-bold mb-8 text-center text-4xl m-5">Profile Form</h1>
-            <form className="w-full max-w-lg mb-30 mx-auto" onSubmit={handleSubmit}>
-                {<form class="w-full max-w-lg mb-30 mx-auto"> 
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            <h1>Profile Form</h1>
+            <form onSubmit={handleSubmit}>
+                {<form > 
+                <div>
+                    <div>
+                        <label for="grid-first-name">
                             First Name
                         </label>
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" required></input>
+                        <input id="grid-first-name" type="text" placeholder="Jane" required></input>
                     </div>
-                    <div class="w-full md:w-1/2 px-3">
+                    <div>
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                             Last Name
                         </label>

@@ -7,17 +7,18 @@ import { ShopContext } from "../context/shop-context";
 import CartItem from "../components/cart-item.jsx";
 import "../styles/cart.css";
 
-// Inside your Cart component
+
 const Cart = () => {
     const { cartItems, getTotalCartAmount } = useContext(ShopContext);
     const totalAmount = getTotalCartAmount();
     const navigate = useNavigate();
 
-    // Create an array of product components only for items with a quantity greater than 0
-    const cartProductComponents = PRODUCTS.filter(product => cartItems[product.id].quantity > 0)
-                                          .map(product => (
-                                              <CartItem key={product.id} data={product} />
-                                          ));
+    const cartProductComponents = PRODUCTS.filter(product => 
+        cartItems[product.id] && cartItems[product.id].quantity > 0
+    ).map(product => (
+        <CartItem key={product.id} data={product} />
+    ));
+
 
     return (
         <div className="cart-container"> 

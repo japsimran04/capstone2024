@@ -5,11 +5,11 @@ import { PRODUCTS } from "../data/products";
 
 export const ShopContext = createContext();
 
-// Adjust getDefaultCart to initialize with more detailed objects if needed
+
 const getDefaultCart = () => {
     let cart = {};
     for (let product of PRODUCTS) {
-        cart[product.id] = { quantity: 0, beanType: 'Whole' }; // Default to 'whole' or any preferred default
+        cart[product.id] = { quantity: 0, beanType: 'Whole' }; 
     }
     return cart;
 };
@@ -31,7 +31,7 @@ export const ShopContextProvider = (props) => {
     const addToCart = (productId, beanType, quantity = 1) => {
         setCartItems((prev) => {
             const currentItem = prev[productId];
-            // If already present, update quantity and bean type, otherwise add new
+            
             return {
                 ...prev,
                 [productId]: {
@@ -44,17 +44,19 @@ export const ShopContextProvider = (props) => {
 
     const removeFromCart = (productId) => {
         setCartItems((prev) => {
-            const currentItem = prev[productId];
-            const newQuantity = currentItem.quantity - 1 > 0 ? currentItem.quantity - 1 : 0;
-            // If the item's quantity goes to 0, you might want to remove it or reset to default
-            return {
-                ...prev,
-                [productId]: { ...currentItem, quantity: newQuantity },
-            };
+            const updatedCartItems = { ...prev };
+            if (prev[productId].quantity === 1) {
+                
+                delete updatedCartItems[productId];
+            } else {
+                
+                updatedCartItems[productId] = { ...prev[productId], quantity: prev[productId].quantity - 1 };
+            }
+            return updatedCartItems;
         });
     };
 
-    // Update to handle the object structure of cartItems
+    
     const updateCartItemCount = (newItemCount, itemId, beanType) => {
         setCartItems((prev) => {
             if (newItemCount !== prev[itemId].quantity) {

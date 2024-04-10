@@ -13,7 +13,7 @@ const CartItem = ({ data }) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
       };
     
-    return (
+      return (
         <div className="cart-item">
             <div className="cart-item-image-container">
                 <img src={productImage} alt={productName} className="product-image" />
@@ -31,6 +31,7 @@ const CartItem = ({ data }) => {
                     </div>
                 </>
                 }
+                <span className="cart-item-remove" onClick={() => removeFromCart(id)}>X</span>
             </div>
         </div>
     );

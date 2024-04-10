@@ -40,6 +40,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    padding-bottom: 250px;
 }
 
 /*edits the shopping cart title*/
@@ -54,7 +55,7 @@
 .cart-item {
     display: grid;
     grid-template-columns: auto minmax(200px, 3fr) 100px 100px auto;
-    grid-template-rows: auto; /* This line will ensure there is no extra space allocated to rows */
+    grid-template-rows: auto; 
     gap: 16px;
     align-items: start;
     padding-bottom: 20px;
@@ -142,7 +143,7 @@
 .subtotal-number {
     font-family: 'Playfair Display', serif;
     font-weight: 200;
-    font-size: 1.4em;
+    font-size: 1.3em;
     text-align: right;
     display: block; 
 }
@@ -158,19 +159,21 @@
 .checkout {
     font-family: 'Playfair Display', serif;
     font-weight: 200;
-    font-size: 1.5em;
-    color: #E9E5D6;
-    background-color: green;
-    border: 2px solid green;
+    font-size: 1.2em;
+    color: #333;
+    background-color: #E6CE69;
+    border: 2px solid #E6CE69;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 35px;
 }
 
+/*adjusts the price of the product*/
 .cart-item-price {
     text-align: right;
-    margin-top: -18px; 
+    margin-top: -20px; 
+    padding-left: 110%;
 }
 
 .cart-titles {
@@ -199,6 +202,28 @@
 }
 
 .cart-item-title.price {
-    justify-self: start; /* Adjust as needed */
+    justify-self: start;
     padding-left: 40px;
+}
+
+/*edits the remove button "X" in the cart*/
+.cart-item-remove {
+    cursor: pointer;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 1.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: -115px;
+    padding-left: 113%;
+    font-family: 'Vazirmatn', sans-serif;
+    font-weight: 150;
+    color: #333;
+}
+
+.cart-item-beanType {
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    color: #333;
 }

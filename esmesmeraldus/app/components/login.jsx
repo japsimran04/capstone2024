@@ -1,6 +1,7 @@
 import React from "react";
 import Signup from "./signup";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import "../styles/login.css";
 
 export default function Login() {
     const navigate = useNavigate();

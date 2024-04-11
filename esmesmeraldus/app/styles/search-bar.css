@@ -1,0 +1,23 @@
+.search-bar {
+    display: inline-flex; /* Display as flex container */
+    align-items: center; /* Align items vertically */
+    transition: width 0.3s ease; /* Add transition for smooth animation */
+    overflow: hidden; /* Hide overflow */
+}
+
+.search-bar.expanded {
+    width: 200px; /* Set the expanded width */
+}
+
+.search-bar.expanded .search-input {
+    width: 20%; /* Expand input to fill available space */
+}
+
+.search-input {
+    flex-grow: 1; /* Allow input to grow and take available space */
+}
+
+.search-button {
+    margin-left: 5px; /* Add margin between input and button */
+    height: 20px;
+}

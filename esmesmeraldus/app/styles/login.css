@@ -3,12 +3,67 @@
         width: 382px;
         overflow: hidden;
         margin: auto;
-        margin: 20 0 0 450px;
-        padding: 80px;
-        background: #23463f;
+        margin: 0 auto;
+        padding: 100px;
+        background: #e6ce69;
         border-radius: 15px ;
 
 }
+
+.signup button {
+        background-color: #34713A;
+        border: none;
+        color: #E6CE69;
+        margin: 2px;
+        gap: 200px;
+        font-family: Playfair Display;
+}
+
+.login button {
+        background-color: #34713A;
+        border: none;
+        color: #E6CE69;
+        margin: 2px;
+        gap: 200px;
+        font-family: Playfair Display;
+}
+
+
+.login h1{
+    text-align: center;
+    padding: 20px;
+    font-family: Playfair Display;
+}
+
+
+.login input[type="text"], input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #E6CE69;
+}
+
+.login input[type="text"], input[type="email"]{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 2px solid #E6CE69;
+
+}
+
+.login input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: #E6CE69;
+    color: #E6CE69;
+}
+
+
 RememberMeCheckbox{
    text-align: center;
     color: #277582;

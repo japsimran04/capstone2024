@@ -11,7 +11,7 @@ export default function Login() {
     };
     return (
         <div className="login">
-            <h1>Log-In</h1>
+            <h1>Log in</h1>
             <form>
                 <FormGroup label="Your email" htmlFor="email" type="email" placeholder="name@flowbite.com" required={true} />
                 <FormGroupWithPopover

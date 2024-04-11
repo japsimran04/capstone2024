@@ -41,10 +41,10 @@ const NavBar = () => {
                     <Image src="/icons/logo.png" alt="Esmeraldus Colombian Coffee" width={100} height={100} />
 
                     <div className="rightSide text-navbar">
-                        <button onClick={() => handleNavigation("/")}>Home<span className="expandIcon"><ExpandMoreIcon /></span></button>
-                        <button onClick={() => handleNavigation("/shop")}>Shop<span className="expandIcon"><ExpandMoreIcon /></span></button>
-                        <button onClick={() => handleNavigation("/about")}>About<span className="expandIcon"><ExpandMoreIcon /></span></button>
-                        <button onClick={() => handleNavigation("/cart")}>Cart<span className="expandIcon"><ExpandMoreIcon /></span></button>
+                        <button onClick={() => handleNavigation("/")}>Home<span className="expandIcon"></span></button>
+                        <button onClick={() => handleNavigation("/shop")}>Shop<span className="expandIcon"></span></button>
+                        <button onClick={() => handleNavigation("/about")}>About<span className="expandIcon"></span></button>
+                        <button onClick={() => handleNavigation("/cart")}>Cart<span className="expandIcon"></span></button>
                     </div>
 
                     <div className="bottom-right">

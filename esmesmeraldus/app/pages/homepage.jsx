@@ -35,33 +35,6 @@ const Homepage = () => {
                     ))}
                 </div>
             </div>
-            {/* Blog Section */}
-            <div className="blog-section">
-                <h2 className="Our-blog-title">Our Blogs</h2>
-                <p className="blog-description">Learn about Specialty Coffee!</p>
-                <div className="blog-cards">
-                    {/* The three blog posts */}
-                    <div className="blog-card">
-                        <img src="/images/cupsofcoffee.png" alt="Shades and Types of Coffee" />
-                        <h2 className= "blog-color-text">Shades and Types of Coffee</h2>
-                        <p className= "blog-color-text">Coffee comes in various types and roasts, each with distinct flavors: Arabica for sweetness, Robusta for strength, and Liberica for uniqueness.</p>
-                        <a href="/blog" className="more-link-one">View Article</a>
-                    </div>
-                    <div className="blog-card">
-                        <img src="/images/Esmeraldus.png" alt="Esmeraldus Colombian Coffee" />
-                        <h2 className= "blog-color-text">The Origin of Esmeraldus Colombian Coffee's Coffeee</h2>
-                        <p className= "blog-color-text">Esmeraldus Colombian Coffee: Finest beans from Santa Rosa de Cabal. Rich flavor, sustainable. Experience Colombian coffee with us.</p>
-                        <a href="/blog" className="more-link-two">View Article</a>
-                    </div>
-                    <div className="blog-card">
-                        <img src="/images/coffeebeans.png" alt="Coffee Beans" />
-                        <h2 className= "blog-color-text">Why Matte Coffee Beans are the Recommended Choice By Esmeraldus</h2>
-                        <p className= "blog-color-text">Esmeraldus Colombian Coffee: Elevate your coffee with matte beans. Rich flavor, low acidity, versatile brewing.</p>
-                        <a href="/blog" className="more-link-three">View Article</a>
-                    </div>
-                </div>
-                <a href="/blog" className="more-link">More...</a>
-            </div>
         </>
     );
 }

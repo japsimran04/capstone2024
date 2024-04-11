@@ -11,8 +11,14 @@
 
 }
 
-.sign-in h1 {
+.sign-in h2 {
+    padding: 20px;
+    color: #E6CE69;
+    font-family: Playfair Display;
     text-align: center;
+}
+
+.sign-in h3 {
     padding: 20px;
     color: #E6CE69;
     font-family: Playfair Display;
@@ -73,5 +79,4 @@
     background-color: #34713A;
     color: #E6CE69;
     border: none;
-    border-color: black;
 }

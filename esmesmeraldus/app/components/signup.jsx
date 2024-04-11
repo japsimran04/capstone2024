@@ -21,6 +21,7 @@ const SignUp = () => {
   return (
     <div className='sign-in'>
       <div>
+        <h2>Sign in</h2>
         <div className='inputs'>
           <h3>Email</h3>
           <input

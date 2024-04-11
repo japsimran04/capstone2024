@@ -1,9 +1,16 @@
 import React from "react";
+import Signup from "./signup";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 export default function Login() {
+    const navigate = useNavigate();
+
+    const handleNavigation = (path) => {
+        navigate(path);
+    };
     return (
         <div className="login">
-            <h1>Log-In Form</h1>
+            <h1>Log-In</h1>
             <form>
                 <FormGroup label="Your email" htmlFor="email" type="email" placeholder="name@flowbite.com" required={true} />
                 <FormGroupWithPopover
@@ -17,6 +24,10 @@ export default function Login() {
                 </div>
                 <SubmitButton label="Log-In" />
             </form>
+            <p>Don't have an account?</p><button onClick={() => handleNavigation("/signup")}>Sign Up</button>
+        <Routes>
+            <Route path="/signup" element={<Signup />} />
+        </Routes>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 .footer-container {
     display: flex;
     justify-content: space-between;
-    padding: 40px 40px; /* Increased top and bottom padding to 40px while keeping left and right padding at 20px */
+    padding: 40px 40px; 
     background-color: #333;
     color: #f0f0f0;
 }
@@ -19,30 +19,31 @@
 .subscribe-form input[type="email"] {
     padding: 8px;
     margin-right: 1px;
-    width: 100%; /* Set the width to 100% of its parent container */
-    box-sizing: border-box; /* Ensure padding is included in the total width */
+    width: 100%; 
+    box-sizing: border-box; 
 }
   
 
 .subscribe-form button {
   padding: 8px;
-  background-color: #E6CE69; /* Darker background for the button */
+  background-color: #E6CE69; 
   color: #333;
   border: none;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .footer-social-media a {
-  padding: 4px 0; /* Spacing between links */
+  padding: 4px 0; 
   text-decoration: none;
   color: #f0f0f0;
-  padding: 4px 8px; /* Add horizontal padding */
+  padding: 4px 8px; 
 }
 
 .footer-social-media {
-    flex-direction: row; /* Change from column to row */
-    justify-content: center; /* Center the icons */
-    align-items: center; /* Align icons vertically */
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .footer-links button {
@@ -58,26 +59,26 @@
 }
 
 .footer-social-media {
-    flex-direction: row; /* Change from column to row */
-    justify-content: center; /* Center the icons */
-    align-items: center; /* Align icons vertically */
-    padding-right: 15px; /* Add some space before the policy links */
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    padding-right: 15px; 
 }
 
 .footer-links {
   display: flex;
   font-family: 'Vazirmatn', serif;
   color: #f0f0f0;
-  flex-direction: column; /* Keep links vertical */
-  justify-content: center; /* Center links vertically */
-  margin-left: -20px; /* Negative margin to bring closer to social icons */
-  padding-left: 0; /* Remove padding if previously set */
+  flex-direction: column; 
+  justify-content: center; 
+  margin-left: -20px; 
+  padding-left: 0; 
 }
 
 .subscriber-news-text {
     font-family: 'Vazirmatn', serif;
     color: #f0f0f0;
-    font-size: 1.0em;
+    font-size: 0.9em;
     margin-top: 10px;
 }
 

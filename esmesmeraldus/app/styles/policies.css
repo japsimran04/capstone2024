@@ -1,0 +1,43 @@
+/* How page will be laid out for all the pages with policy, background and text color*/
+.center-wrapper-policies {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    text-align: center; 
+    background-color: #f0f0f0;
+    width: 100vw; 
+    flex-direction: column; 
+    color: #333;
+}
+
+.policy-page-edit {
+    width: 80%;
+    max-width: 1200px; 
+    margin: auto; 
+
+}
+
+.title-policies {
+    font-family: 'Playfair Display', serif;
+
+    font-weight: 500;
+    font-size: 2.0em;
+    margin-top: 10px;
+    text-align: center;
+ 
+}
+
+.description-policies{
+    font-family: 'Vazirmatn', serif;
+    font-size: 1.0em;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.h3-policies{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-align: left;
+}

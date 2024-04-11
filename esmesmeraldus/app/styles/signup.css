@@ -85,9 +85,10 @@
     width: 100px;
     height: 40px;
     margin-top: 50px;
-    background-color: #34713A;
+    margin-bottom: 50px;
+    background-color: #F0F0F0;
     color: #E6CE69;
-    border: none;
+    border: black;
 }
 
 .background{
@@ -98,3 +99,5 @@ background-color: #34713A;
 .sign-in ::placeholder{
     color: #E6CE69;
 }
+
+

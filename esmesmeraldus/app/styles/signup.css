@@ -71,7 +71,14 @@
 .sign-in input {
     width: 500px;
     height: 35px;
+    border: none; /* Remove the border */
+    border-bottom: 1px solid #E6CE69; /* Add bottom border */
+    background: none;
+    font-family: 'Playfair Display';
+}
 
+.sign-in input:hover {
+    background: #F0F0F0;
 }
 
 .sign-in button {
@@ -81,4 +88,13 @@
     background-color: #34713A;
     color: #E6CE69;
     border: none;
+}
+
+.background{
+background-color: #34713A;
+
+}
+
+.sign-in ::placeholder{
+    color: #E6CE69;
 }

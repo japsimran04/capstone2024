@@ -19,8 +19,9 @@ const SignUp = () => {
   };
 
   return (
+
     <div className='sign-in'>
-      <div>
+      <div className='background'>
         <h2>Sign Up</h2>
         <div className='inputs'>
           <h3>Email</h3>

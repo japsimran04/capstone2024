@@ -14,6 +14,7 @@ import "../styles/nav-bar.css";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+
 const NavBar = () => {
     const navigate = useNavigate();
     const [isSearchVisible, setSearchVisible] = useState(false);
@@ -47,21 +48,15 @@ const NavBar = () => {
                     </div>
 
                     <div className="bottom-right">
-                    <SearchBar onSearch={handleSearch} />
-                    <ShoppingCartIcon></ShoppingCartIcon> 
+                    <SearchBar onSearch={handleSearch} /> 
                     </div>
                           
                     
 
                     <div className="top-right">
                         <button onClick={() => handleNavigation("/login")}>Log in</button>
-                        <button onClick={() => handleNavigation("/signup")}>Sign Up</button> 
-
-                    </div>
-
-                    
-
-                    
+                        <button onClick={() => handleNavigation("/signup")}>Sign Up</button>
+                    </div>       
                 </div>
             </div>
 

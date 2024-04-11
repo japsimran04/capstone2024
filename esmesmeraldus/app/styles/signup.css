@@ -1,38 +1,37 @@
-body
-{
+
+.sign-in {
     margin: 0;
     padding: 0;
-    background-color:#6abadeba;
-    font-family: 'Arial';
-}
-.signup{
-        width: 382px;
-        overflow: hidden;
-        margin: auto;
-        margin: 20 0 0 450px;
-        padding: 80px;
-        background: #23463f;
-        border-radius: 15px ;
+    font-family: 'Playfair Display';
+    overflow: hidden;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    border-radius:15px;
+    background-color:#185024;
 
 }
 
-h2{
+.sign-in h1 {
     text-align: center;
-    color: #277582;
     padding: 20px;
+    color: #E6CE69;
+    font-family: Playfair Display;
 }
-label{
+
+.sign-in label {
     color: #08ffd1;
     font-size: 17px;
 }
-#Uname{
+
+.sign-in #Uname {
     width: 300px;
     height: 30px;
     border: none;
     border-radius: 3px;
     padding-left: 8px;
 }
-#Pass{
+
+.sign-in #Pass {
     width: 300px;
     height: 30px;
     border: none;
@@ -40,21 +39,39 @@ label{
     padding-left: 8px;
 
 }
-#log{
+
+.sign-in #log {
     width: 300px;
     height: 30px;
     border: none;
     border-radius: 17px;
     padding-left: 7px;
     color: blue;
-
-
 }
-span{
+
+.sign-in span {
     color: white;
     font-size: 17px;
 }
-a{
-    float: right;
-    background-color: grey;
+
+.sign-in h3 {
+    color: #E6CE69;
+    font-family: Playfair Display;
+
+}
+
+.sign-in input {
+    width: 500px;
+    height: 35px;
+
+}
+
+.sign-in button {
+    width: 100px;
+    height: 40px;
+    margin-top: 50px;
+    background-color: #34713A;
+    color: #E6CE69;
+    border: none;
+    border-color: black;
 }

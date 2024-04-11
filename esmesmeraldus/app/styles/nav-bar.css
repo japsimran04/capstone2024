@@ -97,9 +97,11 @@ align-items: auto;
     margin-top: 120px;  
 }
 
-
-    
-    
+.text-navbar button   {
+    color: #f0f0f0;
+    font-family: Playfair Display;
+    font-size: 15px;
+}
 
 
 

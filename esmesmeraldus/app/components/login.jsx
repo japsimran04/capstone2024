@@ -12,6 +12,7 @@ export default function Login() {
     return (
         <div className="login">
             <h1>Log in</h1>
+            <div className="center-login">
             <form>
                 <FormGroup label="Your email" htmlFor="email" type="email" placeholder="name@flowbite.com" required={true} />
                 <FormGroupWithPopover
@@ -29,6 +30,7 @@ export default function Login() {
         <Routes>
             <Route path="/signup" element={<Signup />} />
         </Routes>
+        </div>
         </div>
     );
 }

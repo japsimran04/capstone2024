@@ -4,10 +4,14 @@
         overflow: hidden;
         margin: auto;
         padding: 100px;
-        background: #e6ce69;
+        background: #f0f0f0;
         border-radius: 15px ;
         font-family: playfair display;
 
+}
+
+.center-login{
+    text-align: center;
 }
 
 .signup button {
@@ -37,7 +41,7 @@
 
 
 .login input[type="text"], input[type="password"]{
-    width: 100%;
+    width: 50%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -45,7 +49,7 @@
 }
 
 .login input[type="text"], input[type="email"]{
-        width: 100%;
+        width: 50%;
         padding: 10px;
         margin: 10px 0;
         border-radius: 5px;

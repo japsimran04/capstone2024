@@ -5,12 +5,10 @@
     overflow: hidden; /* Hide overflow */
 }
 
-.search-bar.expanded {
-    width: 200px; /* Set the expanded width */
-}
+
 
 .search-bar.expanded .search-input {
-    width: 20%; /* Expand input to fill available space */
+    width: 200%; /* Expand input to fill available space */
 }
 
 .search-input {

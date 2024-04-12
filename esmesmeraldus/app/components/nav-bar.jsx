@@ -38,7 +38,9 @@ const NavBar = () => {
             </div>
             <div className="navbar">
                 <div className="leftSide">
-                    <Image src="/icons/logo.png" alt="Esmeraldus Colombian Coffee" width={100} height={100} />
+                    <a href="/">
+                    <img src="/icons/logo.png" alt="Esmeraldus Colombian Coffee" width="110" height="110" />
+                    </a>
 
                     <div className="rightSide text-navbar">
                         <button onClick={() => handleNavigation("/")}>Home<span className="expandIcon"></span></button>
@@ -46,21 +48,17 @@ const NavBar = () => {
                         <button onClick={() => handleNavigation("/about")}>About<span className="expandIcon"></span></button>
                         <button onClick={() => handleNavigation("/cart")}>Cart<span className="expandIcon"></span></button>
                     </div>
-
+  
                     <div className="bottom-right">
-                    <SearchBar onSearch={handleSearch} /> 
-                    </div>
-                          
+                    <SearchBar className="search-button" onSearch={handleSearch} /> 
+                    </div>  
                     
-
                     <div className="top-right">
-                        <button onClick={() => handleNavigation("/login")}>Log in</button>
-                        <button onClick={() => handleNavigation("/signup")}>Sign Up</button>
-                    </div>       
+                        <button className="login-nav-bar" onClick={() => handleNavigation("/login")}>Log in</button>
+                        <button className="sign-up-nav-bar" onClick={() => handleNavigation("/signup")}>Sign Up</button>
+                    </div>   
                 </div>
             </div>
-
-
 
             <Routes>
                 <Route path="/" element={<Homepage />} />

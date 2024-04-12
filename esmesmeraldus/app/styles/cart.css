@@ -19,6 +19,7 @@
     font-weight: 400;
     font-size: 2.0em;
     text-align: center;
+    padding-bottom: 200px;
 }
 
 /* go back to shopping */
@@ -40,7 +41,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    padding-bottom: 250px;
+    padding-bottom: 200px;
 }
 
 /*edits the shopping cart title*/

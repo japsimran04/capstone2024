@@ -46,7 +46,10 @@ const Cart = () => {
                     </div>
                 </>
             ) : (
+                <div>
                 <h1 className="empty-cart">Your Cart is Empty</h1>
+                <button className="go-back-shopping" onClick={() => navigate("/shop")}>Continue Shopping</button>
+                </div>
             )}
         </div>
     );

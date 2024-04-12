@@ -17,7 +17,7 @@ const Homepage = () => {
 
             {/* Featured Products Section */}
             <div className="featured-products-section">
-                <h2 className="featured-products-title">Featured Products</h2>
+                {/* <h2 className="featured-products-title">Featured Products</h2> */}
                 <div className="featured-products-grid">
                     {featuredProducts.map(product => (
                         <div key={product.id} className="featured-product-card">

@@ -70,7 +70,7 @@ const IndividualProduct = () => {
               <button className={`beanTypeButton ${beanType === 'ground' ? 'selected' : ''}`} onClick={() => setBeanType('ground')}>Ground Bean</button>
 
             </div>
-            <h3 className="select-bean-line select-bean-title"></h3>
+            <h3 className="select-bean-line select-bean-title"></h3> */}
             
             <div className="cart-operations-container">
             <button className="addToCartButton" onClick={handleAddToCart}> 

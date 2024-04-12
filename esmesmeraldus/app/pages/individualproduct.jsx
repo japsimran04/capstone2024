@@ -83,12 +83,12 @@ const IndividualProduct = () => {
             <p>{temperature}</p>
             </div>
             <p className="descriptionnotes">{descriptionnotes}</p>
-            <div>
+            {/* <div>
               <h3 className="select-bean-line select-bean-title">Select Bean Type</h3>
               <button className={`beanTypeButton ${beanType === 'whole' ? 'selected' : ''}`} onClick={() => setBeanType('whole')}>Whole Bean</button>
               <button className={`beanTypeButton ${beanType === 'ground' ? 'selected' : ''}`} onClick={() => setBeanType('ground')}>Ground Bean</button>
 
-            </div>
+            </div> */}
             <h3 className="select-bean-line select-bean-title">Quantity</h3>
             <div className="cart-operations-container">
               <div className="cart-item-quantity-page">

@@ -13,6 +13,7 @@ import Payment from './pages/payment';
 
 
 function Page() {
+
   return (
     <ShopContextProvider>
       <Router>

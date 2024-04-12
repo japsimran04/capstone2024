@@ -88,10 +88,6 @@ const Payment = () => {
   return (
     <Container className={classes.root}>
       <form className={classes.form} onSubmit={processPayment}>
-      <Typography variant="h4" style={{fontFamily:'Playfair Display, serif'}}>Order Summary</Typography>
-      <Typography style={{fontFamily:'Playfair Display, serif'}}>Subtotal: ${totalAmount}</Typography>
-      <Typography style={{fontFamily:'Playfair Display, serif'}}>Taxes: ${(totalWithTaxes - totalAmount).toFixed(2)}</Typography>
-      <Typography style={{ marginBottom: '10px', fontFamily:'Playfair Display, serif' }}>Total Amount (including taxes): ${totalWithTaxes.toFixed(2)}</Typography>
         <Typography variant="h4" style={{fontFamily:'Playfair Display, serif'}} className={classes.title}>
           Checkout
         </Typography>
@@ -220,6 +216,10 @@ const Payment = () => {
             />
           </Grid>
         </Grid>
+        <Typography variant="h4" style={{fontFamily:'Playfair Display, serif'}}>Order Summary</Typography>
+      <Typography style={{fontFamily:'Playfair Display, serif'}}>Subtotal: ${totalAmount}</Typography>
+      <Typography style={{fontFamily:'Playfair Display, serif'}}>Taxes: ${(totalWithTaxes - totalAmount).toFixed(2)}</Typography>
+      <Typography style={{ marginBottom: '10px', fontFamily:'Playfair Display, serif' }}>Total Amount (including taxes): ${totalWithTaxes.toFixed(2)}</Typography>
         <Button
           variant="contained"
           style={{ backgroundColor: '#34713A', color: 'white', fontFamily:'Playfair Display, serif'}}

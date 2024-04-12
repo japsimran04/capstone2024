@@ -62,7 +62,7 @@ font-weight: 300;
 }
 
 .sign-in span {
-    color: white;
+    color: #F0F0F0;
     font-size: 17px;
 }
 
@@ -81,9 +81,6 @@ font-weight: 300;
     font-family: 'Playfair Display';
 }
 
-.sign-in input:hover {
-    background: #F0F0F0;
-}
 
 .sign-in button {
     width: 100px;
@@ -93,6 +90,7 @@ font-weight: 300;
     background-color:#E6CE69;
     color: #333;
     border: black;
+    cursor: pointer;
 }
 
 
@@ -112,5 +110,4 @@ font-weight: 300;
 
 .background-color{
     background-color: #f0f0f0;
-
 }

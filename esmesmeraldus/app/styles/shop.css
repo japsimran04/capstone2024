@@ -7,8 +7,10 @@
   }
 
   .shop-container {
-    padding: 20px;
-
+    padding: 18px;
+    text-align: center; 
+    font-family: 'playfair', serif;
+    color: #333;
   }
 
   .shop-container img {
@@ -25,16 +27,16 @@
 
 .products a {
     text-decoration: none;
-    color: black;
-    font-family: playfair display;
+    color: #333;
+    font-family: 'playfair', serif;
 
 }
 
 .shop h1 {
-    font-family: playfair display;
-    font-size: 50px;
+    font-family: 'playfair', serif;
+    font-size: 40px;
     text-align: center;
-    color:black;
+    color:#333;
 }
 
 .featured-product-card:hover .product-description {
@@ -47,5 +49,32 @@
     height: 100%;
 }
 
+
+.product-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 0 10px 10px; 
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0s linear;
+}
+
+.shop-container:hover .product-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.shop-container .price {
+  font-weight: bold;
+  color: #3D8244;
+  font-family: 'playfair', serif;
+
+}
 
   

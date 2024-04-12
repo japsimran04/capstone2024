@@ -6,15 +6,14 @@ import { Link } from "react-router-dom";
 import "../styles/shop.css";
 
 const shop = () => {
-    const { search } = useLocation(); // Extracting search string from URL
+    const { search } = useLocation();
     const searchParams = new URLSearchParams(search);
     const query = searchParams.get('search')?.toLowerCase() || "";
 
     const [filteredProducts, setFilteredProducts] = useState(PRODUCTS);
 
-    // Effect to handle search query changes and filter products
     useEffect(() => {
-        setFilteredProducts(PRODUCTS.filter(product => 
+        setFilteredProducts(PRODUCTS.filter(product =>
             product.productName.toLowerCase().includes(query)
         ));
     }, [query]);
@@ -26,14 +25,23 @@ const shop = () => {
             </div>
             <div className="products">
                 {filteredProducts.map((product) => (
-                    <div className="shop-container"><Link key={product.id} to={`/product/${product.id}`}>
-                        <Product data={product}/>
-                    </Link>
+                    <div key={product.id} className="shop-container">
+                        <Link to={`/product/${product.id}`}>
+                            <div className="product-image-container">
+                                <img src={product.productImage} alt={product.productName} />
+                                <div className="product-description">
+                                    {product.notes} 
+                                </div>
+                            </div>
+                        </Link>
+                        <h3>{product.productName}</h3>
+                        <p className="price">CAD${product.price.toFixed(2)}</p>
                     </div>
                 ))}
             </div>
         </div>
     );
 };
+
 
 export default shop;

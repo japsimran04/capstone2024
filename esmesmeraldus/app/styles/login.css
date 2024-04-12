@@ -67,23 +67,27 @@ font-weight: 300;
 .login input {
     width: 500px;
     height: 35px;
-    border: none; 
-    margin: 10px 0 10px 0;
-    border-bottom: 1px solid #333;
+    border: none; /* Remove the border */
+    border-bottom: 1px solid #333; /* Add bottom border */
+    margin-top: 5px;
     background: none;
     font-family: 'Playfair Display';
+}
+
+.mb-6 {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 
 .login button {
     width: 100px;
     height: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
     background-color:#E6CE69;
     color: #333;
     border: black;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 
@@ -103,11 +107,4 @@ font-weight: 300;
 
 .background-color{
     background-color: #f0f0f0;
-}
-
-
-rememberMe{
-text-align: left;
-color: #277582;
-padding: 20px;
 }

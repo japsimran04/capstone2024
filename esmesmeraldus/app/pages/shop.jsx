@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom'; // To access query parameters
 import { PRODUCTS } from "../data/products.js";
 import { Product } from "../components/product.jsx";
 import { Link } from "react-router-dom";
-import "../Styles/Shop.css";
+import "../styles/shop.css";
 
 const Shop = () => {
     const { search } = useLocation(); // Extracting search string from URL

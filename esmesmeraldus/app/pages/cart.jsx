@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { PRODUCTS } from "../data/products";
@@ -7,7 +5,6 @@ import { ShopContext } from "../context/shop-context";
 import CartItem from "../components/cart-item.jsx";
 import "../styles/cart.css";
 
-// Inside your Cart component
 const Cart = () => {
     const { cartItems, getTotalCartAmount } = useContext(ShopContext);
     const totalAmount = getTotalCartAmount();
@@ -18,6 +15,12 @@ const Cart = () => {
                                           .map(product => (
                                               <CartItem key={product.id} data={product} />
                                           ));
+
+                                          const handleCheckout = () => {
+                                            // Pass the totalAmount as state when navigating to the payment page
+                                            navigate("/payment", { state: { totalAmount } });
+                                        };
+                                    
 
     return (
         <div className="cart-container"> 
@@ -40,7 +43,7 @@ const Cart = () => {
                         </div>
                         <div className="cart-actions">
                             <button className="go-back-shopping" onClick={() => navigate("/shop")}>Continue Shopping</button>
-                            <button className="checkout" onClick={() => navigate("/checkout")}>Checkout</button>
+                            <button className="checkout" onClick={handleCheckout}>Checkout</button>
                         </div>
                     </div>
                 </>

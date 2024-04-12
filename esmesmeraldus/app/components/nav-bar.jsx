@@ -1,18 +1,23 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Homepage from "../pages/homepage";
 import Shop from "../pages/shop";
-import About from "../pages/about.js"; 
+import About from "../pages/about.js";
 import Cart from "../pages/cart";
 import Login from "./login";
 import Signup from "./signup";
 import SearchBar from "../components/search-bar";
 import Image from "next/image";
+import "../styles/nav-bar.css";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
 const NavBar = () => {
     const navigate = useNavigate();
+    const [isSearchVisible, setSearchVisible] = useState(false);
 
     const handleNavigation = (path) => {
         navigate(path);
@@ -22,24 +27,39 @@ const NavBar = () => {
         navigate(`/search?q=${query}`);
     }
 
+    const toggleSearch = () => {
+        setSearchVisible(!isSearchVisible);
+    };
+
     return (
         <header>
             <div className="scrolling-bar">
                 Free delivery for purchases of $50 or over! Only in Calgary!
             </div>
-            <div className="Header">
-                <Image src="/icons/logo.png" alt="Esmeraldus Colombian Coffee" width={500} height={500} />
-                <h1>Esmeraldus Colombian Coffee</h1>
+            <div className="navbar">
+                <div className="leftSide">
+                    <a href="/">
+                    <img src="/icons/logo.png" alt="Esmeraldus Colombian Coffee" width="110" height="110" />
+                    </a>
+
+                    <div className="rightSide text-navbar">
+                        <button onClick={() => handleNavigation("/")}>Home<span className="expandIcon"></span></button>
+                        <button onClick={() => handleNavigation("/shop")}>Shop<span className="expandIcon"></span></button>
+                        <button onClick={() => handleNavigation("/about")}>About<span className="expandIcon"></span></button>
+                        <button onClick={() => handleNavigation("/cart")}>Cart<span className="expandIcon"></span></button>
+                    </div>
+  
+                    <div className="bottom-right">
+                    <SearchBar className="search-button" onSearch={handleSearch} /> 
+                    </div>  
+                    
+                    <div className="top-right">
+                        <button className="login-nav-bar" onClick={() => handleNavigation("/login")}>Log in</button>
+                        <button className="sign-up-nav-bar" onClick={() => handleNavigation("/signup")}>Sign Up</button>
+                    </div>   
+                </div>
             </div>
-            <div className="user-actions">
-                <button onClick={() => handleNavigation("/")}>Home</button>
-                <button onClick={() => handleNavigation("/shop")}>Shop</button>
-                <button onClick={() => handleNavigation("/about")}>About</button>
-                <button onClick={() => handleNavigation("/cart")}>Cart</button>
-                <button onClick={() => handleNavigation("/login")}>Log In</button>
-                <button onClick={() => handleNavigation("/signup")}>Sign Up</button>
-                <SearchBar onSearch={handleSearch} />
-            </div>
+
             <Routes>
                 <Route path="/" element={<Homepage />} />
                 <Route path="/shop" element={<Shop />} />
@@ -48,6 +68,7 @@ const NavBar = () => {
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
             </Routes>
+
         </header>
     );
 };

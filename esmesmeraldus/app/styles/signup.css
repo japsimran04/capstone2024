@@ -1,25 +1,4 @@
-.sign-in {
-    margin: 0;
-    padding: 0;
-    font-family: 'Playfair Display';
-    overflow: hidden;
-    margin: 20 0 0 450px;
-    padding: 80px;
-    border-radius: 15px;
-    justify-content: center;
-    text-align: center;
 
-}
-
-.sign-in-button {
-    border-radius: 10px;
-    font-weight: 300;
-}
-
-.sign-in h2 {
-    padding: 20px;
-    color: #333;
-    font-family: Playfair Display;
     text-align: center;
 }
 
@@ -29,89 +8,33 @@
     font-family: Playfair Display;
 }
 
-.sign-in label {
+
     color: #08ffd1;
     font-size: 17px;
 }
 
-.sign-in #Uname {
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    padding-left: 8px;
-}
 
-.sign-in #Pass {
     width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    padding-left: 8px;
+height: 30px;
+border: none;
+border-radius: 3px;
+padding-left: 8px;
 
 }
 
-.sign-in #log {
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 17px;
-    padding-left: 7px;
-    color: blue;
+
+#Pass
+{
+width: 300px;
+height: 30px;
+border: none;
+border-radius: 3px;
+padding-left: 8px;
 }
 
-.sign-in span {
+
     color: white;
     font-size: 17px;
 }
 
-.sign-in h3 {
-    color: #34713A;
-    font-family: Playfair Display;
 
-}
-
-.sign-in input {
-    width: 500px;
-    height: 35px;
-    border: none;
-    /* Remove the border */
-    border-bottom: 1px solid #333;
-    /* Add bottom border */
-    background: none;
-    font-family: 'Playfair Display';
-}
-
-.sign-in input:hover {
-    background: #F0F0F0;
-}
-
-.sign-in button {
-    width: 100px;
-    height: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: #E6CE69;
-    color: #333;
-    border: black;
-}
-
-
-.sign-in ::placeholder {
-    color: #333;
-}
-
-.line {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: #333;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.background-color {
-    background-color: #f0f0f0;
-
-}

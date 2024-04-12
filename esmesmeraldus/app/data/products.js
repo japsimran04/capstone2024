@@ -4,6 +4,7 @@ export const PRODUCTS = [
     {
         id: 0,
         productName: "Caturra 250g- Specialty Coffee",
+        productName2: "caturra",
         price: 18.50,
         productpageimage: "/products/caturrapage.png",
         productImage: "/products/coffeecaturra.png",
@@ -19,6 +20,7 @@ export const PRODUCTS = [
     {
         id: 1,
         productName: "Supremo 250g- Specialty Coffee",
+        productName2: "supremo",
         price: 17.50,
         productpageimage: "/products/supremopage.png",
         productImage: "/products/coffeesupremo.png",
@@ -34,6 +36,7 @@ export const PRODUCTS = [
     {
         id: 2,
         productName: "Lembo 250g- Dark Roast",
+        productName2: "lembo",
         price: 16.50,
         productpageimage: "/products/Lembopage.png",
         productImage: "/products/coffeelembo.png",
@@ -48,6 +51,7 @@ export const PRODUCTS = [
     {
         id: 3,
         productName: "Classic 250g - Specialty Coffee",
+        productName2: "classic",
         price: 17.50,
         productpageimage: "/products/classicpage.png",
         productImage: "/products/coffeeclassic.png",
@@ -63,6 +67,7 @@ export const PRODUCTS = [
     {
         id: 4,
         productName: "Blend 250g - Dark Roast",
+        productName2: "blend",
         price: 18.50,
         productpageimage: "/products/blendpage.png",
         productImage: "/products/coffeeblend.png",

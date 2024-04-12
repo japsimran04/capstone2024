@@ -21,6 +21,7 @@ const Cart = () => {
 
 
     return (
+        <div className="page-background">
         <div className="cart-container"> 
             <h1 className="cart-title">Shopping Cart</h1>
             <hr className="line" />
@@ -51,6 +52,7 @@ const Cart = () => {
                 <button className="go-back-shopping" onClick={() => navigate("/shop")}>Continue Shopping</button>
                 </div>
             )}
+        </div>
         </div>
     );
 }

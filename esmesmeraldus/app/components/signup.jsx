@@ -42,7 +42,7 @@ const SignUp = () => {
           />
         </div>
 
-        <button onClick={handleSignUp}>Sign Up</button>
+        <button className="sign-in-button" onClick={handleSignUp}>Sign Up</button>
         {error && <p>{error}</p>}
       </div>
     </div>

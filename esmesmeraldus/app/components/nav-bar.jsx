@@ -11,9 +11,6 @@ import Signup from "./signup";
 import SearchBar from "../components/search-bar";
 import Image from "next/image";
 import "../styles/nav-bar.css";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
 const NavBar = () => {
     const navigate = useNavigate();
@@ -55,7 +52,7 @@ const NavBar = () => {
                     
                     <div className="top-right">
                         <button className="login-nav-bar" onClick={() => handleNavigation("/login")}>Log in</button>
-                        <button className="sign-up-nav-bar" onClick={() => handleNavigation("/signup")}>Sign Up</button>
+                        {/* <button className="sign-up-nav-bar" onClick={() => handleNavigation("/signup")}>Sign Up</button> */}
                     </div>   
                 </div>
             </div>

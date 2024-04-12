@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import '../styles/signup.css';
 
 const SignUp = () => {
   const [email, setEmail] = useState('');
@@ -18,26 +19,32 @@ const SignUp = () => {
   };
 
   return (
-    <div>
-      <h2>Sign Up</h2>
-      <div>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+
+    <div className='sign-in'>
+      <div className='background'>
+        <h2>Sign Up</h2>
+        <div className='inputs'>
+          <h3>Email</h3>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div>
+          <h3>Password</h3>
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+
+        <button className="sign-in-button" onClick={handleSignUp}>Sign Up</button>
+        {error && <p>{error}</p>}
       </div>
-      <div>
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </div>
-      <button onClick={handleSignUp}>Sign Up</button>
-      {error && <p>{error}</p>}
     </div>
   );
 };

@@ -10,11 +10,12 @@ const Cart = () => {
     const totalAmount = getTotalCartAmount();
     const navigate = useNavigate();
 
-    // Create an array of product components only for items with a quantity greater than 0
-    const cartProductComponents = PRODUCTS.filter(product => cartItems[product.id].quantity > 0)
-                                          .map(product => (
-                                              <CartItem key={product.id} data={product} />
-                                          ));
+    const cartProductComponents = PRODUCTS.filter(product => 
+        cartItems[product.id] && cartItems[product.id].quantity > 0
+    ).map(product => (
+        <CartItem key={product.id} data={product} />
+    ));
+
 
                                           const handleCheckout = () => {
                                             // Pass the totalAmount as state when navigating to the payment page
@@ -23,6 +24,7 @@ const Cart = () => {
                                     
 
     return (
+        <div className="page-background">
         <div className="cart-container"> 
             <h1 className="cart-title">Shopping Cart</h1>
             <hr className="line" />
@@ -48,8 +50,12 @@ const Cart = () => {
                     </div>
                 </>
             ) : (
+                <div>
                 <h1 className="empty-cart">Your Cart is Empty</h1>
+                <button className="go-back-shopping" onClick={() => navigate("/shop")}>Continue Shopping</button>
+                </div>
             )}
+        </div>
         </div>
     );
 }

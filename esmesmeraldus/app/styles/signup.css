@@ -1,28 +1,19 @@
 
-.signup{
-    width: 382px;
-    overflow: hidden;
-    margin: auto;
-    margin: 20 0 0 450px;
-    padding: 80px;
-    background: #23463f;
-    border-radius: 15px ;
-}
-
-
-
-RememberMeCheckbox{
     text-align: center;
-    color: #277582;
-    padding: 20px;
 }
 
-.label{
+.sign-in h3 {
+    padding: 20px;
+    color: #E6CE69;
+    font-family: Playfair Display;
+}
+
+
     color: #08ffd1;
     font-size: 17px;
 }
 
-#uname{
+
     width: 300px;
 height: 30px;
 border: none;
@@ -30,6 +21,7 @@ border-radius: 3px;
 padding-left: 8px;
 
 }
+
 
 #Pass
 {
@@ -40,19 +32,9 @@ border-radius: 3px;
 padding-left: 8px;
 }
 
-#log{
-    width: 300px;
-height: 30px;
-border: none;
-border-radius: 17px;
-padding-left: 7px;
-color: blue;
-}
 
-span{
     color: white;
     font-size: 17px;
 }
-
 
 

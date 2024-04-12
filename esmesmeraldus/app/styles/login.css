@@ -1,37 +1,36 @@
-body
-{
+
+   
+.login{
     margin: 0;
     padding: 0;
-    background-color:#6abadeba;
-    font-family: 'Arial';
-}
-.login{
-        width: 382px;
-        overflow: hidden;
-        margin: auto;
-        margin: 20 0 0 450px;
-        padding: 80px;
-        background: #23463f;
-        border-radius: 15px ;
+    font-family: 'Playfair Display';
+    overflow: hidden;
+    padding: 80px;
+    border-radius:15px;
+    background-color:#185024;
+    flex-direction: row;
+    justify-content: center
+;
+    
 
 }
-RememberMeCheckbox{
+.remember{
    text-align: center;
-    color: #277582;
+    
     padding: 20px;
 }
-label{
-    color: #08ffd1;
+.login label{
+    color:#E6CE69;
     font-size: 17px;
 }
-#Uname{
+.login #Uname{
     width: 300px;
     height: 30px;
     border: none;
     border-radius: 3px;
     padding-left: 8px;
 }
-#Pass{
+.login #Pass{
     width: 300px;
     height: 30px;
     border: none;
@@ -39,7 +38,7 @@ label{
     padding-left: 8px;
 
 }
-#log{
+.login #log{
     width: 300px;
     height: 30px;
     border: none;
@@ -49,12 +48,22 @@ label{
 
 
 }
-span{
+.login span{
     color: white;
     font-size: 17px;
 }
 
-a{
-    float: right;
-    background-color: grey;
+.login form{
+    margin-top: 50px;
+    color: #E6CE69;
+    border: none;
+    justify-content: center;
 }
+
+.login h1{
+    padding: 20px;
+    color: #E6CE69;
+    font-family: Playfair Display;
+    text-align: center;
+}
+ 

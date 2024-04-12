@@ -1,6 +1,7 @@
 import React from "react";
 import Signup from "./signup";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import '../styles/login.css';
 
 export default function Login() {
     const navigate = useNavigate();
@@ -19,7 +20,7 @@ export default function Login() {
                     type="password"
                     required={true}
                 />
-                <div className="flex items-start mb-6">
+                <div className="remember">
                     <RememberMeCheckbox />
                 </div>
                 <SubmitButton label="Log-In" />

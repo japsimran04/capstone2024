@@ -88,11 +88,11 @@ const Payment = () => {
   return (
     <Container className={classes.root}>
       <form className={classes.form} onSubmit={processPayment}>
-      <Typography variant="h4">Order Summary</Typography>
-      <Typography>Subtotal: ${totalAmount}</Typography>
-      <Typography>Taxes: ${(totalWithTaxes - totalAmount).toFixed(2)}</Typography>
-      <Typography style={{ marginBottom: '10px' }}>Total Amount (including taxes): ${totalWithTaxes.toFixed(2)}</Typography>
-        <Typography variant="h4" className={classes.title}>
+      <Typography variant="h4" style={{fontFamily:'Playfair Display, serif'}}>Order Summary</Typography>
+      <Typography style={{fontFamily:'Playfair Display, serif'}}>Subtotal: ${totalAmount}</Typography>
+      <Typography style={{fontFamily:'Playfair Display, serif'}}>Taxes: ${(totalWithTaxes - totalAmount).toFixed(2)}</Typography>
+      <Typography style={{ marginBottom: '10px', fontFamily:'Playfair Display, serif' }}>Total Amount (including taxes): ${totalWithTaxes.toFixed(2)}</Typography>
+        <Typography variant="h4" style={{fontFamily:'Playfair Display, serif'}} className={classes.title}>
           Checkout
         </Typography>
         <Grid container spacing={2}>
@@ -105,7 +105,7 @@ const Payment = () => {
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
               required
-              style={{ marginBottom: '10px' }}
+              style={{ marginBottom: '10px', fontFamily:'Playfair Display, serif'}}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -116,7 +116,7 @@ const Payment = () => {
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
               required
-              style={{ marginBottom: '10px' }}
+              style={{ marginBottom: '10px', fontFamily:'Playfair Display, serif'}}
             />
           </Grid>
           <Grid item xs={12}>
@@ -127,7 +127,7 @@ const Payment = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              style={{ marginBottom: '10px' }}
+              style={{ marginBottom: '10px', fontFamily:'Playfair Display, serif'}}
 
             />
           </Grid>
@@ -139,7 +139,7 @@ const Payment = () => {
               value={street}
               onChange={(e) => setStreet(e.target.value)}
               required
-              style={{ marginBottom: '10px' }}
+              style={{ marginBottom: '10px', fontFamily:'Playfair Display, serif'}}
             />
           </Grid>
           </Grid>
@@ -167,12 +167,12 @@ const Payment = () => {
               label="Country"
               value={country}
               disabled
-              style={{ marginBottom: '10px' }}
+              style={{ marginBottom: '10px', fontFamily:'Playfair Display, serif'}}
 
             />
           </Grid>
         </Grid>
-        <Typography variant="h4" style={{ marginBottom: '10px' }}>
+        <Typography variant="h4" style={{ marginBottom: '10px', fontFamily:'Playfair Display, serif' }}>
               Payment Method
           </Typography>
           <Grid container spacing={2}>
@@ -216,12 +216,13 @@ const Payment = () => {
               onChange={(e) => setCvv(e.target.value)}
               inputProps={{ maxLength: 3 }} // Set max length to 3 for CVV
               required
+              style={{ marginBottom: '10px', fontFamily:'Playfair Display, serif'}}
             />
           </Grid>
         </Grid>
         <Button
           variant="contained"
-          color="primary"
+          style={{ backgroundColor: '#34713A', color: 'white', fontFamily:'Playfair Display, serif'}}
           fullWidth
           className={classes.button}
           type="submit"

@@ -4,7 +4,7 @@ import React from "react";
 import { PRODUCTS } from "../data/products.js";
 import { Product } from "../components/product.jsx";
 import { Link } from "react-router-dom";
-import "../Styles/Shop.css";
+import "../Styles/shop.css";
 
 const Shop = () => {
   return (

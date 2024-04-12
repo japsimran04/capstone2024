@@ -1,0 +1,21 @@
+.about {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+
+}
+
+.about h2 {
+    text-align: center;
+    padding: 20px;
+    font-family: Playfair Display;
+}
+
+.about p {
+    text-align: center;
+    padding: 20px;
+    font-family: Playfair Display;
+}

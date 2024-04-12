@@ -1,9 +1,8 @@
 import React from "react";
-
+import "../styles/about.css";
 const About = () => {
     return (
         <div>
-            <h1>About Us</h1>
             <p>When you open a bag of Esmeraldus Coffee you are not just getting coffee; you are getting a piece of a farmer’s heart and dedication</p>
 
             <p>What is Esmeraldus Colombian Coffee?

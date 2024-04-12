@@ -30,7 +30,6 @@
     padding: 100px;  
 }
 
-
 .scrolling-bar{
   justify-content: center;
   background-color:#34713A;
@@ -77,7 +76,6 @@ align-items: auto;
     width: 150px;
     height: 50px;
     font-family: Playfair Display;
-
 }
 
 .top-right button{
@@ -100,7 +98,7 @@ align-items: auto;
     font-size: 100px;
     font-weight: 300px;
     cursor: pointer; 
-    color:#34713A;
+    color:#E6CE69;
     padding-left: 10px;
 }
 

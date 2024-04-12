@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Homepage from "../pages/homepage";
 import Shop from "../pages/shop";
-import About from "../pages/about.js";
+import About from "../pages/about";
 import Cart from "../pages/cart";
 import Login from "./login";
 import Signup from "./signup";

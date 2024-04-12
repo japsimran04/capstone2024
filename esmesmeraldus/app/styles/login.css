@@ -1,12 +1,12 @@
 
 .login{
-        width: 382px;
+        width: auto;
         overflow: hidden;
         margin: auto;
-        margin: 0 auto;
         padding: 100px;
         background: #e6ce69;
         border-radius: 15px ;
+        font-family: playfair display;
 
 }
 

@@ -5,7 +5,7 @@ import { PRODUCTS } from "../data/products.js";
 
 const Homepage = () => {
     const featuredProducts = PRODUCTS.filter(product =>
-        ["Classic 250g - Specialty Coffee", "Lembo 250g- Dark Roast", "Supremo 250g- Specialty Coffee", ].includes(product.productName)
+        ["Classic 250g - Specialty Coffee (Whole Bean)", "Lembo 250g- Dark Roast (Whole Bean)", "Supremo 250g- Specialty Coffee (Whole Bean)", ].includes(product.productName)
     );
 
     return (
@@ -17,7 +17,7 @@ const Homepage = () => {
 
             {/* Featured Products Section */}
             <div className="featured-products-section">
-                {/* <h2 className="featured-products-title">Featured Products</h2> */}
+                <h2 className="featured-products-title">Featured Products</h2>
                 <div className="featured-products-grid">
                     {featuredProducts.map(product => (
                         <div key={product.id} className="featured-product-card">

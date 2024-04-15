@@ -20,9 +20,6 @@ export default function Login() {
                     type="password"
                     required={true}
                 />
-                <div className="remember">
-                    <RememberMeCheckbox />
-                </div>
                 <SubmitButton label="Log-In" />
             </form>
             <p>Don't have an account?</p><button onClick={() => handleNavigation("/signup")}>Sign Up</button>
@@ -95,7 +92,7 @@ function PasswordPopover() {
     );
 }
 
-function RememberMeCheckbox() {
+/*function RememberMeCheckbox() {
     return (
         <div className="flex items-center h-5">
             <input
@@ -104,12 +101,12 @@ function RememberMeCheckbox() {
                 className="checkbox-style"
                 required
             />
-            <label htmlFor="remember" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            <label htmlFor="remember">
                 Remember me
             </label>
         </div>
     );
-}
+}*/
 
 function SubmitButton({ label }) {
     return (

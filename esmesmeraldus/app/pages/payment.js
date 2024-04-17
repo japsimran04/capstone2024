@@ -1,3 +1,4 @@
+import { Input } from '@mui/material';
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 // import MaskedInput from 'react-input-mask';
@@ -106,7 +107,7 @@ const Payment = () => {
           disabled
         />
         <h2 style={{ fontFamily: 'Arial, sans-serif' }}>Payment Method</h2>
-        <MaskedInput
+        <Input
           mask="9999 9999 9999 9999"
           value={cardNumber}
           onChange={(e) => setCardNumber(e.target.value)}
@@ -119,8 +120,8 @@ const Payment = () => {
               required
             />
           )}
-        </MaskedInput>
-        <MaskedInput
+        </Input>
+        <Input
           mask="99/99"
           value={expiryDate}
           onChange={(e) => setExpiryDate(e.target.value)}
@@ -132,7 +133,7 @@ const Payment = () => {
               required
             />
           )}
-        </MaskedInput>
+        </Input>
         <input
           type="text"
           placeholder="CVV"

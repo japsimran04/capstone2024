@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import MaskedInput from 'react-input-mask';
+// import MaskedInput from 'react-input-mask';
 
 const Payment = () => {
   const [cardNumber, setCardNumber] = useState('');

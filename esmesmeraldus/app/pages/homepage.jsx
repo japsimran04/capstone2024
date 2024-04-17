@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/homepage.css";
+import "../styles/homepage.css";
 import { Link } from "react-router-dom";
 import { PRODUCTS } from "../data/products.js";
 

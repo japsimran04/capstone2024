@@ -3,7 +3,7 @@ import { ShopContext } from "../context/shop-context";
 import Image from "next/image";
 import { useParams } from 'react-router-dom';
 import { PRODUCTS } from "../data/products.js";
-import "../Styles/individualproduct.css";
+import "../styles/individualproduct.css";
 
 const IndividualProduct = () => {
   const { id } = useParams();

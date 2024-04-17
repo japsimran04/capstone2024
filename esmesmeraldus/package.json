@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "npm run prepare && next build"
+    "vercel-build": "npm run prepare && next build",
+    "prepare": "echo 'Preparing...'"
   },
   "dependencies": {
     "@mui/icons-material": "^5.15.15",

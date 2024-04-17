@@ -10,7 +10,6 @@
     "vercel-build": "npm run prepare && next build"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.4",
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "firebase": "^10.9.0",

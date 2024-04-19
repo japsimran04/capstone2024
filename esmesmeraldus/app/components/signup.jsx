@@ -12,7 +12,7 @@ const SignUp = () => {
       const auth = getAuth();
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       // User is signed up, you can handle navigation or other logic here
-      console.log('User signed up:', userCredential.user);
+      // console.log('User signed up:', userCredential.user);
     } catch (error) {
       setError(error.message);
     }
